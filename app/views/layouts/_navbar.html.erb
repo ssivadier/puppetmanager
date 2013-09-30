@@ -1,0 +1,20 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+								<%# A chercher dans le fichier /config/initializers/PuppetManager.rb%>
+      <a class="brand" href="#"><%= PuppetManager::Application::TITLE %> <small>v<%= PuppetManager::Application::VERSION %></small></a>
+      <div class="nav-collapse">
+        <ul class="nav">
+			<li><%= link_to "Certifier", nodes_path %></li>
+			<li><%= link_to "Revoquer", index_certified_nodes_path %></li>
+			<li><%= link_to "Modules", puppet_modules_path %></li>
+        </ul>
+        <ul class="nav pull-right">
+			<li><%= link_to "Dashboard", PuppetManager::Application::DASHBOARD_LINK %></li>
+			<li><%= link_to content_tag(:i, '', class: 'icon-user'), users_path %></li>
+			<li><%= link_to content_tag(:i, '', class: 'icon-signout'), signout_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

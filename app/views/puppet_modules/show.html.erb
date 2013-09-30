@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @puppet_module.name %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @puppet_module.version %>
+</p>
+
+<p>
+  <strong>Derniere MAJ:</strong>
+  <%= @puppet_module.updated_at.localtime %>
+</p>
+
+<%= link_to 'Back', puppet_modules_path %>

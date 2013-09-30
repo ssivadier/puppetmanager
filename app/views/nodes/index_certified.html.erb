@@ -1,0 +1,39 @@
+<h1>Node revocation</h1>
+
+
+<%= form_tag(revoke_nodes_path, :class => "form-search") do %>
+
+<div class="input-append pull-right">
+    <input type="text" id=search_field class="span2 search-query">
+	<span class="add-on"><%= link_to content_tag(:i, '', class: 'icon-search'), '#' %></span>
+</div>
+
+<script type="text/javascript">
+	$('input#search_field').quicksearch("table tbody tr");
+</script>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% unless @nodes.blank? %>
+      <% @nodes.each do |node| %>
+		  <tr>
+			<td><label class="checkbox">
+				<input type=checkbox name='ids[]' value=<%= node.id %>><%= node.name %>
+				</label></td>
+			<td><%= link_to 'Show', node %></td>
+		  </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<%= submit_tag "Revoke", {:type => 'submit', :confirm => 'These nodes will not be able to access puppet master anymore. Are you sure ?', :class =>"btn btn-primary", :id =>"btn"} %>
+<% end %>

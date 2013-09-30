@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PuppetManager</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="main" >
+		
+	<!-- MENU -->
+	<%= render 'layouts/navbar' %>
+  
+	<!-- MAIN -->
+	<div class=container>
+		
+		<!-- ERROR BOX -->
+		<% flash.each do |name, msg| %>
+		  <div class="alert alert-block fade in alert-<%= name == :notice ? "success" : "error" %>">
+			<a class="close" data-dismiss="alert">&#215;</a>
+			<strong><%= name.capitalize %> :</strong>
+			<%= content_tag :div, msg.html_safe, :id => "flash_#{name}" if msg.is_a?(String) %>
+		  </div>
+		<% end %>
+		
+		<%= yield %>
+	</div>
+</div>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+</body>
+</html>

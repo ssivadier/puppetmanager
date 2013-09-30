@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <br />
+  <%= if @node.name.include? "win"
+  		content_tag(:i, '', class: 'icon-windows icon-4x pull-left')
+	  else
+		content_tag(:i, '', class: 'icon-linux icon-4x pull-left')
+	  end %>
+  <strong>Name:</strong>
+  <%= @node.name %>
+  <br />
+  <strong>Certified:</strong>
+  <%= @node.certified %>
+  <% if @node.certified %>
+	  <br />
+	  <strong>Certified on:</strong>
+	  <%= @node.updated_at.localtime %>
+  <% end %>
+</p>
+
+<%= link_to 'Back', :back %>

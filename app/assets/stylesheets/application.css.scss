@@ -1,0 +1,25 @@
+/*
+ * Include twitter bootstrap
+ *
+ * Using @import as recommended in the README
+ * because it allows to re-use bootstrap mixins.
+*/
+@import "bootstrap";
+
+/*
+ * Include font-awesome iconic webfont
+ */
+@import "font-awesome";
+
+body { padding-top: 60px; }
+
+pre
+{
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size:70%;
+  margin-bottom: 9px;
+  width: auto;
+  padding: 5px;
+  padding-bottom: 10px;
+  max-height: 600px;
+}

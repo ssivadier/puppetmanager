@@ -1,0 +1,40 @@
+<h1>Modules in production</h1>
+
+<%= form_tag(apply_puppet_modules_path, :class => "form-search") do %>
+
+<div class="input-append pull-right">
+    <input type="text" id=search_field class="span2 search-query">
+	<span class="add-on"><%= link_to content_tag(:i, '', class: 'icon-search'), '#' %></span>
+</div>
+
+<script type="text/javascript">
+	$('input#search_field').quicksearch("table tbody tr");
+</script>
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @puppet_module.each do | puppy_module| %>
+      <tr>
+		<td><input type=hidden name='names[]' value=<%= puppy_module.name %>></td>
+        <td><%= puppy_module.name %></td>
+        <td>
+			<%= select(:version, '', PuppetModule.order(version: :desc).where('name'=>puppy_module.name).collect {|p| [ p.version, p.id ] }, {:selected => PuppetModule.get_current_selected_version(puppy_module.name) }) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= submit_tag "Apply", {:type => 'submit', :confirm => 'Modifications will be applied instantly. Are you sure ?', :class =>"btn btn-primary", :id =>"btn"} %>
+
+<% end %>
+
