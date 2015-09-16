@@ -1,0 +1,9 @@
+# Logfile created on 2015-08-28 11:38:10 +0200 by logger.rb/41954
+2015-08-28 11:38:10 INFO -- [][SystemusersController] has imported user.yaml file
+2015-08-28 11:42:19 INFO -- [][SystemusersController] has imported user.yaml file
+2015-08-28 11:42:42 INFO -- [][SystemusersController] has successfully updated system user lgautrot
+2015-08-28 11:42:47 INFO -- [][SystemusersController] has exported user.yaml file
+2015-08-28 11:43:21 INFO -- [][SystemusersController] has successfully updated system user lgautrot
+2015-08-28 11:44:35 INFO -- [][SystemusersController] has successfully updated system user lgautrot
+2015-08-28 11:44:40 INFO -- [][SystemusersController] has exported user.yaml file
+2015-08-28 14:30:23 INFO -- [][SystemrolesController] has successfully created system role intervenant

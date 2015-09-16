@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @systemrole.name %>
+</p>
+
+<p>
+  <strong>Gid:</strong>
+  <%= @systemrole.gid %>
+</p>
+
+<p>
+  <strong>Optional groups:</strong>
+  <ul>
+  <% @systemrole.optgroups.each do |optgrp| %>
+    <li><%= optgrp.name %></li>
+  <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_systemrole_path(@systemrole), class: "btn btn-primary" %> |
+<%= link_to 'Back', systemroles_path, class: "btn btn-secondary" %>

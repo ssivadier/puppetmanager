@@ -4,6 +4,10 @@
   <strong>Uid:</strong>
   <%= @user.uid %>
 </p>
+<p>
+  <strong>Token:</strong>
+  <%= @user.auth_token %>
+</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

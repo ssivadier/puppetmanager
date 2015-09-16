@@ -1,11 +1,11 @@
-<h1>Node revocation</h1>
+<h1><%= t('title.revoke') %></h1>
 
 
 <%= form_tag(revoke_nodes_path, :class => "form-search") do %>
 
 <div class="input-append pull-right">
     <input type="text" id=search_field class="span2 search-query">
-	<span class="add-on"><%= link_to content_tag(:i, '', class: 'icon-search'), '#' %></span>
+	<span class="add-on"><%= content_tag(:i, '', class: 'icon-search') %></span>
 </div>
 
 <script type="text/javascript">

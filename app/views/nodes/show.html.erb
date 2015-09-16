@@ -3,10 +3,10 @@
 <p>
   <br />
   <%= if @node.name.include? "win"
-  		content_tag(:i, '', class: 'icon-windows icon-4x pull-left')
-	  else
-		content_tag(:i, '', class: 'icon-linux icon-4x pull-left')
-	  end %>
+    content_tag(:i, '', class: 'icon-windows icon-4x pull-right')
+	else
+		content_tag(:i, '', class: 'icon-linux icon-4x pull-right')
+	end %>
   <strong>Name:</strong>
   <%= @node.name %>
   <br />
@@ -17,6 +17,17 @@
 	  <strong>Certified on:</strong>
 	  <%= @node.updated_at.localtime %>
   <% end %>
+  <br />
+  <strong>Architecture:</strong>
+  <%= @node.osarch %>
+  <br />
+  <strong>Distribution:</strong>
+  <%= @node.osname %>
+  <br />
+  <strong>Version:</strong>
+  <%= @node.osversion %>
+  <br />
+  <strong>Virtual:</strong>
+  <%= @node.virtual %>
 </p>
-
 <%= link_to 'Back', :back %>

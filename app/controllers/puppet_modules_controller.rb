@@ -5,62 +5,67 @@ class PuppetModulesController < ApplicationController
   #  Method: Shows modules and their available versions based on git tags
   # -------------------
   def index
-	if File.directory?(PuppetManager::Application::LOCAL_GIT_REPO)	# if the directory really exists (check /config/Initializer/PuppetManager.rb)
-		Dir.chdir(PuppetManager::Application::LOCAL_GIT_REPO) do
-			command_output = `git tag 2>&1`	
-			if $? == 0   #check if the child process exited cleanly.
-				*list_git_tags = command_output.split
-				
-				list_git_tags.map do | module_tag |    # For each tag in git, we check if it exists or create it
-					name, module_version = module_tag.split(/-/)
-					PuppetModule.where('name'=>name, 'version'=>module_version).first_or_create
-				end
-			
-			else  # if the git command failed
-				redirect_to :back, alert: 'The git repository is not available at : <strong>'+PuppetManager::Application::LOCAL_GIT_REPO+'</strong><br /><pre>'+command_output+'</pre>'
-			end
-		end
-		
-		@puppet_module =  PuppetModule.select('DISTINCT(name) as "name"')
-	else  # if the directory doesn't exist
-		redirect_to :back, alert: 'This directory : <strong>'+PuppetManager::Application::LOCAL_GIT_REPO+'</strong> does not exist.<br />Please change the value in the Initializer file.'
-	end
+    if File.directory?(PuppetManager::Application::PUPPET_ENV_DIR)
+      Dir.chdir(PuppetManager::Application::PUPPET_ENV_DIR)  do# on chdir dans le puppet_env_dir (check /config/Initializer/PuppetManager.rb)
+     #   @list_env = ["production","installation"].concat(Dir["Qual_*"].reject{|o| not File.directory?(o)}) # liste les repertoires commencant par "Qual_" en plus des environnements production et installation
+        @list_env = ["production","installation"] # Pour le moment je ne liste pas tous les environnements.
+        
+        @env = params[:environment] # get the environment param
+        
+        if @env.nil? # on first page load, there's no environment param => default to "production"
+          @env = "production"
+        end
+        
+        output = PuppetModule.set_db_from_git(@env)
+        if output.is_a?(String)
+          redirect_to :back, alert: output
+        end
+        
+        # @puppet_module = PuppetModule.where('environment'=>@env).select(:name, :id).group(:name).page(params[:page]).per(10)
+        @puppet_module = PuppetModule.where('environment'=>@env).select(:name, :id).group(:name)
+      end
+    else
+      redirect_to welcome_path, alert: "The path #{PuppetManager::Application::PUPPET_ENV_DIR} does not exist."
+      logger.error "[#{session[:user_uid]}] The path #{PuppetManager::Application::PUPPET_ENV_DIR} does not exist."
+    end
   end
-  # -------------------
+  # -------------------  
   
   
   # -------------------
-  #  Method: Apply modules' versions to puppet prod environment
+  #  Method: Apply modules' versions to puppet environment
   # -------------------  
   def apply
-	if params.has_key?(:version)
-	
-		git_url = "http://my_repo/"	
-		content = ""    # Create all the content for the Puppetfile
-		PuppetModule.find(params[:version]).each do |mod|
-			content << "\n\nmod '"+mod.name+"', :git =>'${git_url}', :ref => '"+mod.name+"-"+mod.version+"', :path => 'modules/"+mod.name+"'"
-		end
-		
-		if File.directory?("/etc/puppet/")
-			Dir.chdir("/etc/puppet/") do
-				fh = File.new("Puppetfile", "w")       # Write down the /etc/puppet/Puppetfile for librarian-puppet gem
-				fh.write(content)
-				fh.close
-			end
-		else
-			redirect_to puppet_modules_path, alert: 'This directory : <strong>/etc/puppet/</strong> does not exist.<br />Please install puppet gem.'
-		end
-		
-		command_output = `librarian-puppet update 2>&1`   # Call for an update of the puppet module folder
-		
-		if $? == 0
-			redirect_to puppet_modules_path, notice: 'Puppet production environment modules have been correctly updated.'
-		else
-			redirect_to puppet_modules_path, alert: 'Something crashed during puppet modules update.<br /><pre>'+command_output+'</pre>'
-		end
-	else
-		redirect_to nodes_path, alert: "No version has been specified, or incorrect version. Please, try again."
-	end
+    if params.has_key?(:version)
+      
+      content = ""
+      command_output = ""
+      environment = params[:env][0]
+      environment_path = PuppetManager::Application::PUPPET_ENV_DIR + environment
+      
+      # Prepare the puppetfile content
+      PuppetModule.find(params[:version]).each do |mod|
+        content << "\nmod '"+mod.name+"', :git =>"+mod.url+", :ref => '"+mod.version+"'"
+      end
+      
+      # write it down
+      PuppetModule.write_to_file(environment_path,"Puppetfile.#{PuppetManager::Application::PM_SITE}",content)
+      
+      # now updates modules folder
+      command_output = `sudo #{PuppetManager::Application::PUPPET_ENV_DIR}/production/scripts/master-sync #{environment} 2>&1 /dev/null`
+      
+      if $? == 0
+        # then back to modules' page
+        redirect_to puppet_modules_path, notice: "Puppet #{environment} environment modules has been updated."
+        MyLog.info "[#{session[:user_uid]}][#{self.class.name}] updated puppet modules of #{environment} environment."
+      else
+        redirect_to puppet_modules_path, alert: "There was an issue updating the modules list. #{environment} environment is not up-to-date (master-sync failed)."
+        logger.error "[#{session[:user_uid]}] #{environment} environment could not be updated (master-sync failed)."
+      end
+    else
+      redirect_to nodes_path, alert: "No version has been specified, or incorrect version. Please, try again."
+      logger.error "[#{session[:user_uid]}] incorrect version syntax in module page."
+    end
   end
   # ------------------- 
   
@@ -74,6 +79,31 @@ class PuppetModulesController < ApplicationController
       end
     end
   end
+  
+  def show
+    @module_name = PuppetModule.find(params[:id]).name
+    module_environment = PuppetModule.find(params[:id]).environment
+    @module_versions = PuppetModule.where('environment'=>module_environment).where('name'=>@module_name).order('version')
+  end
+  
+  def diff
+    @puppet_module = PuppetModule.find(params[:ids])
+    module_url = @puppet_module.first.url
+    @module_name = @puppet_module.first.name.split('/')[1]
+    Dir.chdir("tmp") do
+      command_output = `git clone #{module_url} 2>&1`
+      if $? == 0   #check if the child process exited cleanly.
+        Dir.chdir("puppet-#{@module_name}") do
+          @puppet_module.sort! { |a,b| a.id <=> b.id }
+          @diff_output = `git diff --stat --summary #{@puppet_module[0].version}..#{@puppet_module[1].version}`
+          @command = "git diff --stat --summary #{@puppet_module[0].version}..#{@puppet_module[1].version}"
+        end
+        command_output = `rm -rf puppet-#{@module_name} 2>&1`
+      else  # if the git command failed
+        redirect_to :back, alert: 'The git repository is not available : <strong>git clone #{module_url}</strong><br /><pre>'+command_output+'</pre>'
+      end
+    end
+  end
 
   def destroy
     @puppet_module.destroy
@@ -82,6 +112,24 @@ class PuppetModulesController < ApplicationController
     end
   end
 
+  # GET /puppet_modules/new
+  def create
+    name = session[:user_uid].split('@')[0]
+    final_name = name.chars.first + name.split('.')[1]
+    
+    if File.directory?("#{PuppetManager::Application::PUPPET_ENV_DIR}/Qual_#{final_name}")
+      redirect_to puppet_modules_path, warning: "Environment Qual_#{final_name} already exists"
+    else
+      command_output = `sudo /etc/puppet/environments/production/scripts/create-environment Qual_#{final_name}`
+      
+      if $? == 0
+        redirect_to puppet_modules_path, notice: "Environment Qual_#{final_name} has been correctly created"
+      else
+        redirect_to puppet_modules_path, alert: "Environment Qual_#{final_name} hasn't been created"
+      end
+    end
+  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_puppet_module

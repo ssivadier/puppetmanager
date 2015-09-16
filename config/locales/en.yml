@@ -21,3 +21,30 @@
 
 en:
   hello: "Hello world"
+  forms:
+    buttons:
+      show: 'Show'
+      edit: 'Edit'
+      destroy: 'Destroy'
+      newuser: 'New User'
+      newrole: 'New System Role'
+      import: 'Import YAML'
+      export: 'export YAML'
+  menu:
+    languages:
+      lang: "Langage"
+      fr: "French"
+      en: "English"
+    revoke: 'Revoke node'
+    systemusers:
+      users: "Users"
+      admins: "Admins"
+      roles: "Roles"
+  title:
+    user: "Apps Users"
+    system: "System Users"
+    systemroles: "System Roles"
+    welcome: "Welcome to Puppet manager"
+    revoke: "Revoke node"
+  content:
+    welcome_html: "This application has been designed to help puppet users manage the puppet master.<br /><br /><i>Nota: If you do not have access to all functionnalities, ask an administrator.</i>"

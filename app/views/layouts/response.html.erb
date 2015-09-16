@@ -1,0 +1,39 @@
+<html>
+<head><title>Please Wait</title>
+	<meta http-equiv=cache-control content=max-age=3600>
+	<link href=css/960.css rel=stylesheet type=text/css media=screen />
+	<link href=css/mycss.css rel=stylesheet type=text/css media=screen />
+	<link href=css/loader.css rel=stylesheet type=text/css media=screen />
+	<script src=js/jquery.js type=text/javascript></script>
+	<script src=js/main.js type=text/javascript></script>
+	<script type=text/javascript>
+	function delayedRedirect(){
+		window.location = "http://puppetmanager.sen.centre-serveur.i2/"
+	}
+	$(function(){
+		progress(100, $('#loader'));
+	});
+	</script>
+</head>
+<body onload="setTimeout('delayedRedirect()', 3000);">
+<div class="container_16">
+<div id="main" class="grid_16">
+	<div id=header class="grid_16">
+		<div class="grid_10 prefix_3 title">Puppet Manager dev</div>
+		<div class="grid_2 prefix_1"><a href="http://ha2-puppetmaster.sen.centre-serveur.i2:3000/">Dashboard</a></div>
+	</div>	
+	
+	<div class="grid_16">
+		<center>
+			<br /><br />
+			<b><TMPL_VAR NAME="SORTIE"></b>
+			<br />
+			<div id="loader">
+				<div></div>
+			</div>
+			<br /><br />
+		</center>
+	</div>
+</div>
+</body>
+</html>

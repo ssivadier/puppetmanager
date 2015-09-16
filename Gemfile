@@ -6,9 +6,6 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
-
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -24,9 +21,6 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 1.2'
-
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -36,26 +30,37 @@ end
 gem 'thin'
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
 gem 'pry', groups: [:development, :test]
 
 # For Web design only
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 2.3.2.0'
 gem 'font-awesome-rails', '~> 3.2.1.2'
+gem 'nprogress-rails'
 
-# Manage the modules from git repo for puppet
-gem 'librarian-puppet'
+gem 'simple_form'
 
 # Authentication through omniauth-cas
 gem 'omniauth-cas'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+# On abandonne le paging pour le moment
+#gem 'kaminari'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+gem 'activerecord-session_store'
 
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
+# installer en local: gem install puppet -i vendor -v 3.6.2 --no-rdoc --no-ri
+#gem 'puppet', :path => "vendor"
+#gem 'puppet', '3.6.2', :path => "vendor/"
+#gem 'facter', '2.4.1', :path => "vendor/"
+#gem 'hiera', '1.3.4', :path => "vendor/"
+#gem 'json_pure', '1.8.2', :path => "vendor/"
+#gem 'rgen', '0.6.6', :path => "vendor/"
+#gem 'haml'
+#gem 'haml-rails'
+#gem 'haml-contrib'
+#gem 'RedCloth'
 
+gem 'rails-i18n', '~> 4.0.0' # for Rails 4
+
+# gere les variables d'environnement dans config/application.yaml
+gem 'figaro'

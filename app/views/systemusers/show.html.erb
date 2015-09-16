@@ -1,0 +1,68 @@
+<h2>User description</h2>
+
+<p>
+  <strong>Name:</strong>
+  <%= @systemuser.name %>
+</p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @systemuser.uid %>
+</p>
+
+<p>
+  <strong>Ensure:</strong>
+  <%= @systemuser.ensure %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @systemuser.comment %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @systemuser.systemrole.name %>
+</p>
+
+<p>
+  <strong>Manage home:</strong>
+  <%= @systemuser.manage_home %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @systemuser.password %>
+</p>
+
+<p>
+  <strong>Sshkey:</strong>
+  <%= @systemuser.sshkey %>
+</p>
+
+<p>
+  <strong>Sshkeytype:</strong>
+  <%= @systemuser.sshkeytype %>
+</p>
+
+<p>
+  <strong>Keyfile:</strong>
+  <%= @systemuser.keyfile %>
+</p>
+
+<p>
+  <strong>Shell:</strong>
+  <%= @systemuser.shell.name %>
+</p>
+
+<p>
+  <strong>Optional groups:</strong>
+  <ul>
+  <% @systemuser.systemrole.optgroups.each do |optgrp| %>
+    <li><%= optgrp.name %></li>
+  <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_systemuser_path(@systemuser), class: "btn btn-primary" %> |
+<%= link_to 'Back', systemusers_path, class: "btn btn-secondary" %>

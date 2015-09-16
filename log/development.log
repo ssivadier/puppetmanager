@@ -1,1 +1,962 @@
+2015-08-28 11:37:33 INFO -- Started GET "/" for 127.0.0.1 at 2015-08-28 11:37:33 +0200
+2015-08-28 11:37:33 FATAL -- 
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
 
+
+2015-08-28 11:37:33 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+2015-08-28 11:37:33 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+2015-08-28 11:37:33 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+2015-08-28 11:37:33 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+2015-08-28 11:37:43 INFO -- Migrating to CreateNodes (20130820085202)
+2015-08-28 11:37:44 INFO -- Migrating to CreatePuppetModules (20130820085406)
+2015-08-28 11:37:44 INFO -- Migrating to AddCertifiedToNodes (20130820094414)
+2015-08-28 11:37:44 INFO -- Migrating to CreateUsers (20130913080244)
+2015-08-28 11:37:44 INFO -- Migrating to AddSessionsTable (20131018070457)
+2015-08-28 11:37:44 INFO -- Migrating to AddUrlToPuppetModules (20140402122309)
+2015-08-28 11:37:44 INFO -- Migrating to AddEnvironmentToPuppetModules (20140403091153)
+2015-08-28 11:37:44 INFO -- Migrating to CreateSystemusers (20150306081325)
+2015-08-28 11:37:44 INFO -- Migrating to CreateShells (20150306084250)
+2015-08-28 11:37:44 INFO -- Migrating to CreateJointTableOptgroupRole (20150306084532)
+2015-08-28 11:37:45 INFO -- Migrating to CreateSystemroles (20150310075311)
+2015-08-28 11:37:45 INFO -- Migrating to CreateOptgroups (20150310084147)
+2015-08-28 11:37:45 INFO -- Migrating to AddFactsToNodes (20150310092805)
+2015-08-28 11:37:45 INFO -- Migrating to AddAuthTokenToUsers (20150312151015)
+2015-08-28 11:37:45 INFO -- Migrating to AddSshkeyfileToSystemusers (20150828093535)
+2015-08-28 11:37:51 INFO -- Started GET "/" for 127.0.0.1 at 2015-08-28 11:37:51 +0200
+2015-08-28 11:37:51 INFO -- Processing by WelcomeController#index as HTML
+2015-08-28 11:37:51 INFO --   Rendered welcome/index.html.erb within layouts/application (0.9ms)
+2015-08-28 11:37:53 INFO --   Rendered layouts/_navbar.html.erb (1.8ms)
+2015-08-28 11:37:53 INFO -- Completed 200 OK in 1896ms (Views: 1895.3ms | ActiveRecord: 0.3ms)
+2015-08-28 11:37:56 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:37:56 +0200
+2015-08-28 11:37:56 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:37:56 INFO --   Rendered systemusers/index.html.erb within layouts/application (1.4ms)
+2015-08-28 11:37:56 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-08-28 11:37:56 INFO -- Completed 200 OK in 171ms (Views: 4.8ms | ActiveRecord: 0.5ms)
+2015-08-28 11:37:57 INFO -- Started GET "/systemusers/import" for 127.0.0.1 at 2015-08-28 11:37:57 +0200
+2015-08-28 11:37:57 INFO -- Processing by SystemusersController#import as HTML
+2015-08-28 11:38:10 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-08-28 11:38:10 INFO -- Completed 302 Found in 12747ms (ActiveRecord: 12271.0ms)
+2015-08-28 11:38:10 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:10 +0200
+2015-08-28 11:38:10 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:10 INFO --   Rendered systemusers/index.html.erb within layouts/application (54.1ms)
+2015-08-28 11:38:10 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:10 INFO -- Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 2.4ms)
+2015-08-28 11:38:14 INFO -- Started GET "/systemusers/1" for 127.0.0.1 at 2015-08-28 11:38:14 +0200
+2015-08-28 11:38:14 INFO -- Processing by SystemusersController#show as HTML
+2015-08-28 11:38:14 INFO --   Parameters: {"id"=>"1"}
+2015-08-28 11:38:14 INFO --   Rendered systemusers/show.html.erb within layouts/application (4.7ms)
+2015-08-28 11:38:14 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:14 INFO -- Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.7ms)
+2015-08-28 11:38:16 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:16 +0200
+2015-08-28 11:38:16 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:16 INFO --   Rendered systemusers/index.html.erb within layouts/application (54.7ms)
+2015-08-28 11:38:16 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:16 INFO -- Completed 200 OK in 59ms (Views: 55.5ms | ActiveRecord: 2.1ms)
+2015-08-28 11:38:16 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:16 +0200
+2015-08-28 11:38:16 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:16 INFO --   Rendered systemusers/index.html.erb within layouts/application (93.1ms)
+2015-08-28 11:38:16 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:16 INFO -- Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 2.1ms)
+2015-08-28 11:38:16 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:16 +0200
+2015-08-28 11:38:16 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:16 INFO --   Rendered systemusers/index.html.erb within layouts/application (49.0ms)
+2015-08-28 11:38:16 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:16 INFO -- Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 2.0ms)
+2015-08-28 11:38:21 INFO -- Started GET "/systemusers/33/edit" for 127.0.0.1 at 2015-08-28 11:38:21 +0200
+2015-08-28 11:38:21 INFO -- Processing by SystemusersController#edit as HTML
+2015-08-28 11:38:21 INFO --   Parameters: {"id"=>"33"}
+2015-08-28 11:38:22 INFO --   Rendered systemusers/_form.html.erb (404.8ms)
+2015-08-28 11:38:22 INFO --   Rendered systemusers/edit.html.erb within layouts/application (406.2ms)
+2015-08-28 11:38:22 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:22 INFO -- Completed 200 OK in 410ms (Views: 408.7ms | ActiveRecord: 0.4ms)
+2015-08-28 11:38:52 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:52 +0200
+2015-08-28 11:38:52 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:52 INFO --   Rendered systemusers/index.html.erb within layouts/application (87.8ms)
+2015-08-28 11:38:52 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:52 INFO -- Completed 200 OK in 92ms (Views: 88.6ms | ActiveRecord: 2.2ms)
+2015-08-28 11:38:55 INFO -- Started GET "/systemusers/32/edit" for 127.0.0.1 at 2015-08-28 11:38:55 +0200
+2015-08-28 11:38:55 INFO -- Processing by SystemusersController#edit as HTML
+2015-08-28 11:38:55 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:38:55 INFO --   Rendered systemusers/_form.html.erb (17.2ms)
+2015-08-28 11:38:55 INFO --   Rendered systemusers/edit.html.erb within layouts/application (17.9ms)
+2015-08-28 11:38:55 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:55 INFO -- Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+2015-08-28 11:38:57 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:57 +0200
+2015-08-28 11:38:57 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:57 INFO --   Rendered systemusers/index.html.erb within layouts/application (53.8ms)
+2015-08-28 11:38:57 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:57 INFO -- Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 2.1ms)
+2015-08-28 11:38:57 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:57 +0200
+2015-08-28 11:38:57 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:57 INFO --   Rendered systemusers/index.html.erb within layouts/application (94.9ms)
+2015-08-28 11:38:57 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:57 INFO -- Completed 200 OK in 102ms (Views: 96.6ms | ActiveRecord: 4.5ms)
+2015-08-28 11:38:57 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:57 +0200
+2015-08-28 11:38:57 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:57 INFO --   Rendered systemusers/index.html.erb within layouts/application (49.9ms)
+2015-08-28 11:38:57 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-08-28 11:38:57 INFO -- Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 2.1ms)
+2015-08-28 11:38:57 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:57 +0200
+2015-08-28 11:38:57 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:58 INFO --   Rendered systemusers/index.html.erb within layouts/application (110.3ms)
+2015-08-28 11:38:58 INFO --   Rendered layouts/_navbar.html.erb (0.4ms)
+2015-08-28 11:38:58 INFO -- Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 2.0ms)
+2015-08-28 11:38:58 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:58 +0200
+2015-08-28 11:38:58 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:58 INFO --   Rendered systemusers/index.html.erb within layouts/application (47.5ms)
+2015-08-28 11:38:58 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:58 INFO -- Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 2.0ms)
+2015-08-28 11:38:58 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:58 +0200
+2015-08-28 11:38:58 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:58 INFO --   Rendered systemusers/index.html.erb within layouts/application (46.7ms)
+2015-08-28 11:38:58 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:58 INFO -- Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 1.9ms)
+2015-08-28 11:38:58 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:38:58 +0200
+2015-08-28 11:38:58 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:38:58 INFO --   Rendered systemusers/index.html.erb within layouts/application (93.0ms)
+2015-08-28 11:38:58 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:38:58 INFO -- Completed 200 OK in 125ms (Views: 119.8ms | ActiveRecord: 4.2ms)
+2015-08-28 11:39:11 INFO -- Started GET "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:39:11 +0200
+2015-08-28 11:39:11 INFO -- Processing by SystemusersController#show as HTML
+2015-08-28 11:39:11 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:39:11 INFO --   Rendered systemusers/show.html.erb within layouts/application (2.7ms)
+2015-08-28 11:39:11 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:39:11 INFO -- Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+2015-08-28 11:41:41 INFO -- Migrating to CreateNodes (20130820085202)
+2015-08-28 11:41:41 INFO -- Migrating to CreatePuppetModules (20130820085406)
+2015-08-28 11:41:41 INFO -- Migrating to AddCertifiedToNodes (20130820094414)
+2015-08-28 11:41:41 INFO -- Migrating to CreateUsers (20130913080244)
+2015-08-28 11:41:41 INFO -- Migrating to AddSessionsTable (20131018070457)
+2015-08-28 11:41:42 INFO -- Migrating to AddUrlToPuppetModules (20140402122309)
+2015-08-28 11:41:42 INFO -- Migrating to AddEnvironmentToPuppetModules (20140403091153)
+2015-08-28 11:41:42 INFO -- Migrating to CreateSystemusers (20150306081325)
+2015-08-28 11:41:42 INFO -- Migrating to CreateShells (20150306084250)
+2015-08-28 11:41:42 INFO -- Migrating to CreateJointTableOptgroupRole (20150306084532)
+2015-08-28 11:41:42 INFO -- Migrating to CreateSystemroles (20150310075311)
+2015-08-28 11:41:43 INFO -- Migrating to CreateOptgroups (20150310084147)
+2015-08-28 11:41:43 INFO -- Migrating to AddFactsToNodes (20150310092805)
+2015-08-28 11:41:43 INFO -- Migrating to AddAuthTokenToUsers (20150312151015)
+2015-08-28 11:41:43 INFO -- Migrating to AddKeyfileToSystemusers (20150828093535)
+2015-08-28 11:41:53 INFO -- Started GET "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:41:53 +0200
+2015-08-28 11:41:53 INFO -- Processing by SystemusersController#show as HTML
+2015-08-28 11:41:53 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:41:53 INFO -- Completed 404 Not Found in 16ms
+2015-08-28 11:41:53 FATAL -- 
+ActiveRecord::RecordNotFound (Couldn't find Systemuser with id=32):
+  app/controllers/systemusers_controller.rb:72:in `set_systemuser'
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-08-28 11:41:53 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+2015-08-28 11:41:53 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+2015-08-28 11:41:53 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+2015-08-28 11:41:53 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+2015-08-28 11:41:55 INFO -- Started GET "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:41:55 +0200
+2015-08-28 11:41:55 INFO -- Processing by SystemusersController#show as HTML
+2015-08-28 11:41:55 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:41:55 INFO -- Completed 404 Not Found in 2ms
+2015-08-28 11:41:55 FATAL -- 
+ActiveRecord::RecordNotFound (Couldn't find Systemuser with id=32):
+  app/controllers/systemusers_controller.rb:72:in `set_systemuser'
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-08-28 11:41:55 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+2015-08-28 11:41:55 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+2015-08-28 11:41:55 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+2015-08-28 11:41:55 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+2015-08-28 11:41:58 INFO -- Started GET "/" for 127.0.0.1 at 2015-08-28 11:41:58 +0200
+2015-08-28 11:41:58 INFO -- Processing by WelcomeController#index as HTML
+2015-08-28 11:41:58 INFO --   Rendered welcome/index.html.erb within layouts/application (0.3ms)
+2015-08-28 11:41:59 INFO --   Rendered layouts/_navbar.html.erb (1.0ms)
+2015-08-28 11:41:59 INFO -- Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.1ms)
+2015-08-28 11:42:00 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:42:00 +0200
+2015-08-28 11:42:00 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:42:00 INFO --   Rendered systemusers/index.html.erb within layouts/application (1.6ms)
+2015-08-28 11:42:00 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-08-28 11:42:00 INFO -- Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+2015-08-28 11:42:01 INFO -- Started GET "/systemusers/import" for 127.0.0.1 at 2015-08-28 11:42:01 +0200
+2015-08-28 11:42:01 INFO -- Processing by SystemusersController#import as HTML
+2015-08-28 11:42:19 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-08-28 11:42:19 INFO -- Completed 302 Found in 17953ms (ActiveRecord: 17527.6ms)
+2015-08-28 11:42:19 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:42:19 +0200
+2015-08-28 11:42:19 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:42:20 INFO --   Rendered systemusers/index.html.erb within layouts/application (99.7ms)
+2015-08-28 11:42:20 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:20 INFO -- Completed 200 OK in 104ms (Views: 100.3ms | ActiveRecord: 2.3ms)
+2015-08-28 11:42:23 INFO -- Started GET "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:42:23 +0200
+2015-08-28 11:42:23 INFO -- Processing by SystemusersController#show as HTML
+2015-08-28 11:42:23 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:42:23 INFO --   Rendered systemusers/show.html.erb within layouts/application (4.2ms)
+2015-08-28 11:42:23 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:23 INFO -- Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.7ms)
+2015-08-28 11:42:26 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:42:26 +0200
+2015-08-28 11:42:26 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:42:26 INFO --   Rendered systemusers/index.html.erb within layouts/application (53.6ms)
+2015-08-28 11:42:26 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:26 INFO -- Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 2.1ms)
+2015-08-28 11:42:26 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:42:26 +0200
+2015-08-28 11:42:26 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:42:26 INFO --   Rendered systemusers/index.html.erb within layouts/application (59.0ms)
+2015-08-28 11:42:26 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:26 INFO -- Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 3.0ms)
+2015-08-28 11:42:26 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:42:26 +0200
+2015-08-28 11:42:26 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:42:26 INFO --   Rendered systemusers/index.html.erb within layouts/application (91.3ms)
+2015-08-28 11:42:26 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:26 INFO -- Completed 200 OK in 95ms (Views: 92.3ms | ActiveRecord: 2.1ms)
+2015-08-28 11:42:30 INFO -- Started GET "/systemusers/32/edit" for 127.0.0.1 at 2015-08-28 11:42:30 +0200
+2015-08-28 11:42:30 INFO -- Processing by SystemusersController#edit as HTML
+2015-08-28 11:42:30 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:42:30 INFO --   Rendered systemusers/_form.html.erb (77.4ms)
+2015-08-28 11:42:30 INFO --   Rendered systemusers/edit.html.erb within layouts/application (78.7ms)
+2015-08-28 11:42:30 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:30 INFO -- Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 0.5ms)
+2015-08-28 11:42:42 INFO -- Started PATCH "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:42:42 +0200
+2015-08-28 11:42:42 INFO -- Processing by SystemusersController#update as HTML
+2015-08-28 11:42:42 INFO --   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qnICZ+xxO2AsN1UvdvqkcU+knnNxDqUVKnldW0ELLXM=", "systemuser"=>{"name"=>"lgautrot", "uid"=>"31007", "ensure"=>"present", "comment"=>"Laurent Gautrot", "manage_home"=>"1", "password"=>"[FILTERED]", "sshkey"=>"AAAAB3NzaC1yc2EAAAADAQABAAABAQCnftemlEBRARd6U1L05+SmHw7WARltcWkQP1nz4yAVyz0T6L4XpQ6aQ2UCWC7eSeh0cQ75nAEgc/4qyz0TEDNz7DeqLXxXn38tFnDDUCITbcLDFR0xTBZffaHNWhv2cqDKhHcwGR8+Q6zX6FB723FjRxge4/bNoQzjqfsPG2ONXsVvS3jhp+z0cGOAgPzV/HK6FlnLEnJshW5djdmHrVSDK1wrPN5UakUJChM1N2DsJlIzXLKgA4HWC6Eb0csGKF9zNPqIc3t2T+SfUgKxSPDp6HCOX8AQnxSXyu4SfU8Q+gYxWl56YswDwvjuB9czqb9cKG3UuGhVbAeffDdKhpvT", "sshkeytype"=>"ssh-rsa", "keyfile"=>"/etc/ssh/KEYS/authorized_keys-macle", "shell_id"=>"1", "systemrole_id"=>"1"}, "commit"=>"Update Systemuser", "id"=>"32"}
+2015-08-28 11:42:42 INFO -- Redirected to http://127.0.0.1:3000/systemusers/32
+2015-08-28 11:42:42 INFO -- Completed 302 Found in 102ms (ActiveRecord: 96.5ms)
+2015-08-28 11:42:42 INFO -- Started GET "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:42:42 +0200
+2015-08-28 11:42:42 INFO -- Processing by SystemusersController#show as HTML
+2015-08-28 11:42:42 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:42:42 INFO --   Rendered systemusers/show.html.erb within layouts/application (3.4ms)
+2015-08-28 11:42:42 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:42 INFO -- Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+2015-08-28 11:42:45 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:42:45 +0200
+2015-08-28 11:42:45 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:42:45 INFO --   Rendered systemusers/index.html.erb within layouts/application (82.1ms)
+2015-08-28 11:42:45 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:45 INFO -- Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 2.0ms)
+2015-08-28 11:42:46 INFO -- Started GET "/systemusers/export" for 127.0.0.1 at 2015-08-28 11:42:46 +0200
+2015-08-28 11:42:46 INFO -- Processing by SystemusersController#export as HTML
+2015-08-28 11:42:47 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-08-28 11:42:47 INFO -- Completed 302 Found in 293ms (ActiveRecord: 4.5ms)
+2015-08-28 11:42:47 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:42:47 +0200
+2015-08-28 11:42:47 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:42:47 INFO --   Rendered systemusers/index.html.erb within layouts/application (48.9ms)
+2015-08-28 11:42:47 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:42:47 INFO -- Completed 200 OK in 53ms (Views: 49.7ms | ActiveRecord: 2.0ms)
+2015-08-28 11:43:15 INFO -- Started GET "/systemusers/32/edit" for 127.0.0.1 at 2015-08-28 11:43:15 +0200
+2015-08-28 11:43:15 INFO -- Processing by SystemusersController#edit as HTML
+2015-08-28 11:43:15 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:43:15 INFO --   Rendered systemusers/_form.html.erb (19.9ms)
+2015-08-28 11:43:15 INFO --   Rendered systemusers/edit.html.erb within layouts/application (20.6ms)
+2015-08-28 11:43:15 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:43:15 INFO -- Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.5ms)
+2015-08-28 11:43:21 INFO -- Started PATCH "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:43:21 +0200
+2015-08-28 11:43:21 INFO -- Processing by SystemusersController#update as HTML
+2015-08-28 11:43:21 INFO --   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qnICZ+xxO2AsN1UvdvqkcU+knnNxDqUVKnldW0ELLXM=", "systemuser"=>{"name"=>"lgautrot", "uid"=>"31007", "ensure"=>"present", "comment"=>"Laurent Gautrot", "manage_home"=>"1", "password"=>"[FILTERED]", "sshkey"=>"AAAAB3NzaC1yc2EAAAADAQABAAABAQCnftemlEBRARd6U1L05+SmHw7WARltcWkQP1nz4yAVyz0T6L4XpQ6aQ2UCWC7eSeh0cQ75nAEgc/4qyz0TEDNz7DeqLXxXn38tFnDDUCITbcLDFR0xTBZffaHNWhv2cqDKhHcwGR8+Q6zX6FB723FjRxge4/bNoQzjqfsPG2ONXsVvS3jhp+z0cGOAgPzV/HK6FlnLEnJshW5djdmHrVSDK1wrPN5UakUJChM1N2DsJlIzXLKgA4HWC6Eb0csGKF9zNPqIc3t2T+SfUgKxSPDp6HCOX8AQnxSXyu4SfU8Q+gYxWl56YswDwvjuB9czqb9cKG3UuGhVbAeffDdKhpvT", "sshkeytype"=>"ssh-rsa", "keyfile"=>"/etc/ssh/KEYS/authorized_keys-test", "shell_id"=>"1", "systemrole_id"=>"1"}, "commit"=>"Update Systemuser", "id"=>"32"}
+2015-08-28 11:43:21 INFO -- Redirected to http://127.0.0.1:3000/systemusers/32
+2015-08-28 11:43:21 INFO -- Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+2015-08-28 11:43:21 INFO -- Started GET "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:43:21 +0200
+2015-08-28 11:43:21 INFO -- Processing by SystemusersController#show as HTML
+2015-08-28 11:43:21 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:43:21 INFO --   Rendered systemusers/show.html.erb within layouts/application (2.8ms)
+2015-08-28 11:43:21 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:43:21 INFO -- Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.5ms)
+2015-08-28 11:44:03 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:44:03 +0200
+2015-08-28 11:44:03 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:44:03 INFO --   Rendered systemusers/index.html.erb within layouts/application (79.0ms)
+2015-08-28 11:44:03 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:44:03 INFO -- Completed 200 OK in 120ms (Views: 112.7ms | ActiveRecord: 2.9ms)
+2015-08-28 11:44:15 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:44:15 +0200
+2015-08-28 11:44:15 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:44:16 INFO --   Rendered systemusers/index.html.erb within layouts/application (111.9ms)
+2015-08-28 11:44:16 INFO --   Rendered layouts/_navbar.html.erb (0.8ms)
+2015-08-28 11:44:16 INFO -- Completed 200 OK in 177ms (Views: 158.5ms | ActiveRecord: 4.0ms)
+2015-08-28 11:44:19 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:44:19 +0200
+2015-08-28 11:44:19 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:44:19 INFO --   Rendered systemusers/index.html.erb within layouts/application (47.4ms)
+2015-08-28 11:44:19 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:44:19 INFO -- Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 2.5ms)
+2015-08-28 11:44:25 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:44:25 +0200
+2015-08-28 11:44:25 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:44:25 INFO --   Rendered systemusers/index.html.erb within layouts/application (75.7ms)
+2015-08-28 11:44:25 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-08-28 11:44:25 INFO -- Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 2.0ms)
+2015-08-28 11:44:29 INFO -- Started GET "/systemusers/32/edit" for 127.0.0.1 at 2015-08-28 11:44:29 +0200
+2015-08-28 11:44:29 INFO -- Processing by SystemusersController#edit as HTML
+2015-08-28 11:44:29 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:44:29 INFO --   Rendered systemusers/_form.html.erb (86.6ms)
+2015-08-28 11:44:29 INFO --   Rendered systemusers/edit.html.erb within layouts/application (87.9ms)
+2015-08-28 11:44:29 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:44:29 INFO -- Completed 200 OK in 92ms (Views: 90.0ms | ActiveRecord: 0.8ms)
+2015-08-28 11:44:34 INFO -- Started PATCH "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:44:34 +0200
+2015-08-28 11:44:34 INFO -- Processing by SystemusersController#update as HTML
+2015-08-28 11:44:34 INFO --   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qnICZ+xxO2AsN1UvdvqkcU+knnNxDqUVKnldW0ELLXM=", "systemuser"=>{"name"=>"lgautrot", "uid"=>"31007", "ensure"=>"present", "comment"=>"Laurent Gautrot", "manage_home"=>"1", "password"=>"[FILTERED]", "sshkey"=>"AAAAB3NzaC1yc2EAAAADAQABAAABAQCnftemlEBRARd6U1L05+SmHw7WARltcWkQP1nz4yAVyz0T6L4XpQ6aQ2UCWC7eSeh0cQ75nAEgc/4qyz0TEDNz7DeqLXxXn38tFnDDUCITbcLDFR0xTBZffaHNWhv2cqDKhHcwGR8+Q6zX6FB723FjRxge4/bNoQzjqfsPG2ONXsVvS3jhp+z0cGOAgPzV/HK6FlnLEnJshW5djdmHrVSDK1wrPN5UakUJChM1N2DsJlIzXLKgA4HWC6Eb0csGKF9zNPqIc3t2T+SfUgKxSPDp6HCOX8AQnxSXyu4SfU8Q+gYxWl56YswDwvjuB9czqb9cKG3UuGhVbAeffDdKhpvT", "sshkeytype"=>"ssh-rsa", "keyfile"=>"/etc/ssh/KEYS/authorized_keys-test", "shell_id"=>"1", "systemrole_id"=>"1"}, "commit"=>"Update Systemuser", "id"=>"32"}
+2015-08-28 11:44:35 INFO -- Redirected to http://127.0.0.1:3000/systemusers/32
+2015-08-28 11:44:35 INFO -- Completed 302 Found in 162ms (ActiveRecord: 149.6ms)
+2015-08-28 11:44:35 INFO -- Started GET "/systemusers/32" for 127.0.0.1 at 2015-08-28 11:44:35 +0200
+2015-08-28 11:44:35 INFO -- Processing by SystemusersController#show as HTML
+2015-08-28 11:44:35 INFO --   Parameters: {"id"=>"32"}
+2015-08-28 11:44:35 INFO --   Rendered systemusers/show.html.erb within layouts/application (17.0ms)
+2015-08-28 11:44:35 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:44:35 INFO -- Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 1.0ms)
+2015-08-28 11:44:39 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:44:39 +0200
+2015-08-28 11:44:39 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:44:39 INFO --   Rendered systemusers/index.html.erb within layouts/application (87.0ms)
+2015-08-28 11:44:39 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:44:39 INFO -- Completed 200 OK in 93ms (Views: 89.2ms | ActiveRecord: 2.2ms)
+2015-08-28 11:44:40 INFO -- Started GET "/systemusers/export" for 127.0.0.1 at 2015-08-28 11:44:40 +0200
+2015-08-28 11:44:40 INFO -- Processing by SystemusersController#export as HTML
+2015-08-28 11:44:40 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-08-28 11:44:40 INFO -- Completed 302 Found in 219ms (ActiveRecord: 5.0ms)
+2015-08-28 11:44:41 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 11:44:41 +0200
+2015-08-28 11:44:41 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 11:44:41 INFO --   Rendered systemusers/index.html.erb within layouts/application (70.2ms)
+2015-08-28 11:44:41 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 11:44:41 INFO -- Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 2.3ms)
+2015-08-28 13:48:22 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 13:48:22 +0200
+2015-08-28 13:48:22 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 13:48:22 INFO --   Rendered systemusers/index.html.erb within layouts/application (111.4ms)
+2015-08-28 13:48:22 INFO --   Rendered layouts/_navbar.html.erb (0.8ms)
+2015-08-28 13:48:22 INFO -- Completed 200 OK in 175ms (Views: 156.7ms | ActiveRecord: 3.9ms)
+2015-08-28 13:48:41 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 13:48:41 +0200
+2015-08-28 13:48:41 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 13:48:41 INFO --   Rendered systemusers/index.html.erb within layouts/application (50.8ms)
+2015-08-28 13:48:41 INFO --   Rendered layouts/_navbar.html.erb (0.8ms)
+2015-08-28 13:48:41 INFO -- Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 1.9ms)
+2015-08-28 13:51:04 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 13:51:04 +0200
+2015-08-28 13:51:04 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 13:51:04 INFO --   Rendered systemusers/index.html.erb within layouts/application (70.2ms)
+2015-08-28 13:51:04 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-08-28 13:51:04 INFO -- Completed 200 OK in 105ms (Views: 102.5ms | ActiveRecord: 1.9ms)
+2015-08-28 14:30:07 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 14:30:07 +0200
+2015-08-28 14:30:07 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 14:30:07 INFO --   Rendered systemusers/index.html.erb within layouts/application (110.2ms)
+2015-08-28 14:30:07 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-08-28 14:30:07 INFO -- Completed 200 OK in 181ms (Views: 136.4ms | ActiveRecord: 30.9ms)
+2015-08-28 14:30:10 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-08-28 14:30:10 +0200
+2015-08-28 14:30:10 INFO -- Processing by SystemrolesController#index as HTML
+2015-08-28 14:30:10 INFO --   Rendered systemroles/index.html.erb within layouts/application (4.8ms)
+2015-08-28 14:30:10 INFO --   Rendered layouts/_navbar.html.erb (1.1ms)
+2015-08-28 14:30:10 INFO -- Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+2015-08-28 14:30:14 INFO -- Started GET "/systemroles/new" for 127.0.0.1 at 2015-08-28 14:30:14 +0200
+2015-08-28 14:30:14 INFO -- Processing by SystemrolesController#new as HTML
+2015-08-28 14:30:14 INFO --   Rendered systemroles/_form.html.erb (70.5ms)
+2015-08-28 14:30:14 INFO --   Rendered systemroles/new.html.erb within layouts/application (71.5ms)
+2015-08-28 14:30:14 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 14:30:14 INFO -- Completed 200 OK in 99ms (Views: 74.2ms | ActiveRecord: 0.5ms)
+2015-08-28 14:30:23 INFO -- Started POST "/systemroles" for 127.0.0.1 at 2015-08-28 14:30:23 +0200
+2015-08-28 14:30:23 INFO -- Processing by SystemrolesController#create as HTML
+2015-08-28 14:30:23 INFO --   Parameters: {"utf8"=>"✓", "authenticity_token"=>"qnICZ+xxO2AsN1UvdvqkcU+knnNxDqUVKnldW0ELLXM=", "systemrole"=>{"name"=>"intervenant", "gid"=>"31001", "optgroups_attributes"=>{"0"=>{"name"=>"", "_destroy"=>"0"}}}, "commit"=>"Create Systemrole"}
+2015-08-28 14:30:23 INFO -- Redirected to http://127.0.0.1:3000/systemroles/9
+2015-08-28 14:30:23 INFO -- Completed 302 Found in 175ms (ActiveRecord: 162.6ms)
+2015-08-28 14:30:23 INFO -- Started GET "/systemroles/9" for 127.0.0.1 at 2015-08-28 14:30:23 +0200
+2015-08-28 14:30:23 INFO -- Processing by SystemrolesController#show as HTML
+2015-08-28 14:30:23 INFO --   Parameters: {"id"=>"9"}
+2015-08-28 14:30:23 INFO --   Rendered systemroles/show.html.erb within layouts/application (5.5ms)
+2015-08-28 14:30:23 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 14:30:23 INFO -- Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.7ms)
+2015-08-28 14:30:25 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-08-28 14:30:25 +0200
+2015-08-28 14:30:25 INFO -- Processing by SystemrolesController#index as HTML
+2015-08-28 14:30:25 INFO --   Rendered systemroles/index.html.erb within layouts/application (6.4ms)
+2015-08-28 14:30:25 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-08-28 14:30:25 INFO -- Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+2015-08-28 14:31:22 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-08-28 14:31:22 +0200
+2015-08-28 14:31:22 INFO -- Processing by SystemusersController#index as HTML
+2015-08-28 14:31:22 INFO --   Rendered systemusers/index.html.erb within layouts/application (69.2ms)
+2015-08-28 14:31:22 INFO --   Rendered layouts/_navbar.html.erb (0.4ms)
+2015-08-28 14:31:22 INFO -- Completed 200 OK in 75ms (Views: 70.9ms | ActiveRecord: 2.5ms)
+2015-08-28 14:46:38 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-08-28 14:46:38 +0200
+2015-08-28 14:46:38 INFO -- Processing by SystemrolesController#index as HTML
+2015-08-28 14:46:38 INFO --   Rendered systemroles/index.html.erb within layouts/application (11.1ms)
+2015-08-28 14:46:38 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-08-28 14:46:38 INFO -- Completed 200 OK in 74ms (Views: 58.6ms | ActiveRecord: 0.8ms)
+2015-09-15 11:25:12 INFO -- Started GET "/" for 127.0.0.1 at 2015-09-15 11:25:12 +0200
+2015-09-15 11:25:13 INFO -- Processing by WelcomeController#index as HTML
+2015-09-15 11:25:13 INFO --   Rendered welcome/index.html.erb within layouts/application (1.2ms)
+2015-09-15 11:25:13 INFO --   Rendered layouts/_navbar.html.erb (1.1ms)
+2015-09-15 11:25:13 INFO -- Completed 200 OK in 264ms (Views: 262.8ms | ActiveRecord: 0.3ms)
+2015-09-15 11:25:18 INFO -- Started GET "/fr/" for 127.0.0.1 at 2015-09-15 11:25:18 +0200
+2015-09-15 11:25:18 FATAL -- 
+ActionController::RoutingError (No route matches [GET] "/fr"):
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-15 11:25:18 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+2015-09-15 11:25:18 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+2015-09-15 11:25:18 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.4ms)
+2015-09-15 11:25:18 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.6ms)
+2015-09-15 11:26:37 INFO -- Started GET "/" for 127.0.0.1 at 2015-09-15 11:26:37 +0200
+2015-09-15 11:26:37 INFO -- Processing by WelcomeController#index as HTML
+2015-09-15 11:26:37 INFO --   Rendered welcome/index.html.erb within layouts/application (0.1ms)
+2015-09-15 11:26:37 INFO --   Rendered layouts/_navbar.html.erb (0.4ms)
+2015-09-15 11:26:37 INFO -- Completed 200 OK in 33ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+2015-09-15 11:26:39 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-09-15 11:26:39 +0200
+2015-09-15 11:26:40 FATAL -- 
+LoadError (cannot load such file -- puppet):
+  app/controllers/nodes_controller.rb:2:in `<top (required)>'
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-15 11:26:40 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+2015-09-15 11:26:40 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+2015-09-15 11:26:40 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+2015-09-15 11:26:40 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.1ms)
+2015-09-15 11:26:40 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-09-15 11:26:40 +0200
+2015-09-15 11:26:40 FATAL -- 
+LoadError (cannot load such file -- puppet):
+  app/controllers/nodes_controller.rb:2:in `<top (required)>'
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-15 11:26:40 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+2015-09-15 11:26:40 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+2015-09-15 11:26:40 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+2015-09-15 11:26:40 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+2015-09-15 11:26:49 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-15 11:26:49 +0200
+2015-09-15 11:26:49 INFO -- Processing by SystemusersController#index as HTML
+2015-09-15 11:26:49 INFO --   Rendered systemusers/index.html.erb within layouts/application (148.4ms)
+2015-09-15 11:26:49 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-09-15 11:26:49 INFO -- Completed 200 OK in 220ms (Views: 177.6ms | ActiveRecord: 2.5ms)
+2015-09-15 11:27:20 INFO -- Started GET "/systemusers/1" for 127.0.0.1 at 2015-09-15 11:27:20 +0200
+2015-09-15 11:27:20 INFO -- Processing by SystemusersController#show as HTML
+2015-09-15 11:27:20 INFO --   Parameters: {"id"=>"1"}
+2015-09-15 11:27:20 INFO --   Rendered systemusers/show.html.erb within layouts/application (74.1ms)
+2015-09-15 11:27:20 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-15 11:27:20 INFO -- Completed 200 OK in 130ms (Views: 127.5ms | ActiveRecord: 1.3ms)
+2015-09-15 11:27:29 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-15 11:27:29 +0200
+2015-09-15 11:27:29 INFO -- Processing by SystemusersController#index as HTML
+2015-09-15 11:27:29 INFO --   Rendered systemusers/index.html.erb within layouts/application (55.8ms)
+2015-09-15 11:27:29 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-15 11:27:29 INFO -- Completed 200 OK in 60ms (Views: 56.6ms | ActiveRecord: 2.2ms)
+2015-09-15 11:27:29 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-15 11:27:29 +0200
+2015-09-15 11:27:29 INFO -- Processing by SystemusersController#index as HTML
+2015-09-15 11:27:29 INFO --   Rendered systemusers/index.html.erb within layouts/application (55.5ms)
+2015-09-15 11:27:29 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-15 11:27:29 INFO -- Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 2.1ms)
+2015-09-15 11:32:05 INFO -- Started GET "/systemusers?locale=fr" for 127.0.0.1 at 2015-09-15 11:32:05 +0200
+2015-09-15 11:32:05 INFO -- Processing by SystemusersController#index as HTML
+2015-09-15 11:32:05 INFO --   Parameters: {"locale"=>"fr"}
+2015-09-15 11:32:05 INFO --   Rendered systemusers/index.html.erb within layouts/application (86.4ms)
+2015-09-15 11:32:05 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-15 11:32:05 INFO -- Completed 200 OK in 90ms (Views: 87.5ms | ActiveRecord: 2.0ms)
+2015-09-15 11:33:01 INFO -- Started GET "/fr/systemusers" for 127.0.0.1 at 2015-09-15 11:33:01 +0200
+2015-09-15 11:33:01 FATAL -- 
+ActionController::RoutingError (No route matches [GET] "/fr/systemusers"):
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-15 11:33:01 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+2015-09-15 11:33:01 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+2015-09-15 11:33:01 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+2015-09-15 11:33:01 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.1ms)
+2015-09-15 11:35:18 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-15 11:35:18 +0200
+2015-09-15 11:35:18 INFO -- Processing by SystemusersController#index as HTML
+2015-09-15 11:35:19 INFO --   Rendered systemusers/index.html.erb within layouts/application (69.3ms)
+2015-09-15 11:35:19 INFO -- Completed 500 Internal Server Error in 88ms
+2015-09-15 11:35:19 FATAL -- 
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"systemusers", :locale=>#<Systemuser id: 1, name: "secours", uid: 20002, ensure: "present", comment: "Compte utilisateur Secours", manage_home: false, password: nil, sshkey: nil, sshkeytype: nil, shell_id: 1, systemrole_id: 1, created_at: "2015-08-28 09:42:07", updated_at: "2015-08-28 09:42:07", keyfile: nil>, :id=>nil, :format=>nil} missing required keys: [:id]):
+    47:         <% else %>
+    48:           <td><%= systemuser.systemrole.name %></td>
+    49:         <% end %>
+    50:         <td><%= link_to 'Show', systemuser %></td>
+    51:         <td><%= link_to 'Edit', edit_systemuser_path(systemuser) %></td>
+    52:         <td><%= link_to 'Destroy', systemuser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    53:       </tr>
+  app/views/systemusers/index.html.erb:50:in `block in _app_views_systemusers_index_html_erb___1775352066688666388_69937600791340'
+  app/views/systemusers/index.html.erb:39:in `_app_views_systemusers_index_html_erb___1775352066688666388_69937600791340'
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-15 11:35:19 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+2015-09-15 11:35:19 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+2015-09-15 11:35:19 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+2015-09-15 11:41:04 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-15 11:41:04 +0200
+2015-09-15 11:41:05 INFO -- Processing by SystemusersController#index as HTML
+2015-09-15 11:41:05 INFO --   Rendered systemusers/index.html.erb within layouts/application (110.9ms)
+2015-09-15 11:41:05 INFO --   Rendered layouts/_navbar.html.erb (0.8ms)
+2015-09-15 11:41:05 INFO -- Completed 200 OK in 175ms (Views: 157.1ms | ActiveRecord: 4.0ms)
+2015-09-15 11:41:42 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-15 11:41:42 +0200
+2015-09-15 11:41:42 INFO -- Processing by SystemusersController#index as HTML
+2015-09-15 11:41:42 INFO --   Rendered systemusers/index.html.erb within layouts/application (111.4ms)
+2015-09-15 11:41:42 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-09-15 11:41:42 INFO -- Completed 200 OK in 175ms (Views: 157.3ms | ActiveRecord: 4.0ms)
+2015-09-16 13:34:10 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 13:34:10 +0200
+2015-09-16 13:34:10 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 13:34:10 INFO --   Rendered systemusers/index.html.erb within layouts/application (109.9ms)
+2015-09-16 13:34:10 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-09-16 13:34:10 INFO -- Completed 200 OK in 176ms (Views: 158.1ms | ActiveRecord: 4.0ms)
+2015-09-16 13:34:19 INFO -- Started GET "/systemusers/1/edit" for 127.0.0.1 at 2015-09-16 13:34:19 +0200
+2015-09-16 13:34:19 INFO -- Processing by SystemusersController#edit as HTML
+2015-09-16 13:34:19 INFO --   Parameters: {"id"=>"1"}
+2015-09-16 13:34:20 INFO --   Rendered systemusers/_form.html.erb (673.2ms)
+2015-09-16 13:34:20 INFO --   Rendered systemusers/edit.html.erb within layouts/application (674.5ms)
+2015-09-16 13:34:20 INFO --   Rendered layouts/_navbar.html.erb (0.8ms)
+2015-09-16 13:34:20 INFO -- Completed 200 OK in 684ms (Views: 681.9ms | ActiveRecord: 0.8ms)
+2015-09-16 13:34:37 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 13:34:37 +0200
+2015-09-16 13:34:37 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 13:34:37 INFO --   Rendered systemusers/index.html.erb within layouts/application (82.4ms)
+2015-09-16 13:34:37 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-16 13:34:37 INFO -- Completed 200 OK in 87ms (Views: 83.4ms | ActiveRecord: 2.0ms)
+2015-09-16 13:35:00 INFO -- Started GET "/fr/systemusers" for 127.0.0.1 at 2015-09-16 13:35:00 +0200
+2015-09-16 13:35:00 FATAL -- 
+ActionController::RoutingError (No route matches [GET] "/fr/systemusers"):
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-16 13:35:00 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+2015-09-16 13:35:00 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+2015-09-16 13:35:00 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+2015-09-16 13:35:00 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.7ms)
+2015-09-16 13:35:05 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 13:35:05 +0200
+2015-09-16 13:35:05 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 13:35:05 INFO --   Rendered systemusers/index.html.erb within layouts/application (49.2ms)
+2015-09-16 13:35:05 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-16 13:35:05 INFO -- Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 2.5ms)
+2015-09-16 14:40:54 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:40:54 +0200
+2015-09-16 14:40:54 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:40:54 INFO --   Rendered systemusers/index.html.erb within layouts/application (125.7ms)
+2015-09-16 14:40:54 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-09-16 14:40:55 INFO -- Completed 200 OK in 198ms (Views: 173.8ms | ActiveRecord: 4.3ms)
+2015-09-16 14:40:58 INFO -- Started GET "/systemusers/1/edit" for 127.0.0.1 at 2015-09-16 14:40:58 +0200
+2015-09-16 14:40:58 INFO -- Processing by SystemusersController#edit as HTML
+2015-09-16 14:40:58 INFO --   Parameters: {"id"=>"1"}
+2015-09-16 14:40:58 INFO --   Rendered systemusers/_form.html.erb (367.1ms)
+2015-09-16 14:40:58 INFO --   Rendered systemusers/edit.html.erb within layouts/application (368.4ms)
+2015-09-16 14:40:58 INFO --   Rendered layouts/_navbar.html.erb (0.8ms)
+2015-09-16 14:40:58 INFO -- Completed 200 OK in 374ms (Views: 371.1ms | ActiveRecord: 0.8ms)
+2015-09-16 14:41:02 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:41:02 +0200
+2015-09-16 14:41:02 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:41:02 INFO --   Rendered systemusers/index.html.erb within layouts/application (161.2ms)
+2015-09-16 14:41:02 INFO --   Rendered layouts/_navbar.html.erb (0.4ms)
+2015-09-16 14:41:02 INFO -- Completed 200 OK in 169ms (Views: 163.3ms | ActiveRecord: 4.4ms)
+2015-09-16 14:41:24 INFO -- Started GET "/systemusers/1/edit" for 127.0.0.1 at 2015-09-16 14:41:24 +0200
+2015-09-16 14:41:24 INFO -- Processing by SystemusersController#edit as HTML
+2015-09-16 14:41:24 INFO --   Parameters: {"id"=>"1"}
+2015-09-16 14:41:24 INFO --   Rendered systemusers/_form.html.erb (23.0ms)
+2015-09-16 14:41:24 INFO --   Rendered systemusers/edit.html.erb within layouts/application (24.1ms)
+2015-09-16 14:41:24 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-16 14:41:24 INFO -- Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 1.1ms)
+2015-09-16 14:41:27 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:41:27 +0200
+2015-09-16 14:41:27 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:41:27 INFO --   Rendered systemusers/index.html.erb within layouts/application (108.1ms)
+2015-09-16 14:41:27 INFO --   Rendered layouts/_navbar.html.erb (0.5ms)
+2015-09-16 14:41:27 INFO -- Completed 200 OK in 113ms (Views: 108.6ms | ActiveRecord: 3.3ms)
+2015-09-16 14:44:42 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:44:42 +0200
+2015-09-16 14:44:42 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:44:43 INFO --   Rendered systemusers/index.html.erb within layouts/application (160.5ms)
+2015-09-16 14:44:43 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-16 14:44:43 INFO -- Completed 200 OK in 164ms (Views: 105.8ms | ActiveRecord: 57.6ms)
+2015-09-16 14:47:08 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:47:08 +0200
+2015-09-16 14:47:08 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:47:08 INFO --   Rendered systemusers/index.html.erb within layouts/application (136.2ms)
+2015-09-16 14:47:08 INFO --   Rendered layouts/_navbar.html.erb (0.5ms)
+2015-09-16 14:47:08 INFO -- Completed 200 OK in 141ms (Views: 137.2ms | ActiveRecord: 2.9ms)
+2015-09-16 14:47:09 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:47:09 +0200
+2015-09-16 14:47:09 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:47:10 INFO --   Rendered systemusers/index.html.erb within layouts/application (119.4ms)
+2015-09-16 14:47:10 INFO --   Rendered layouts/_navbar.html.erb (0.4ms)
+2015-09-16 14:47:10 INFO -- Completed 200 OK in 124ms (Views: 120.1ms | ActiveRecord: 2.9ms)
+2015-09-16 14:47:20 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:47:20 +0200
+2015-09-16 14:47:20 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:47:21 INFO --   Rendered systemusers/index.html.erb within layouts/application (441.6ms)
+2015-09-16 14:47:21 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-09-16 14:47:21 INFO -- Completed 200 OK in 483ms (Views: 460.7ms | ActiveRecord: 4.2ms)
+2015-09-16 14:48:16 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:48:16 +0200
+2015-09-16 14:48:16 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:48:17 INFO --   Rendered systemusers/index.html.erb within layouts/application (391.4ms)
+2015-09-16 14:48:17 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-16 14:48:17 INFO -- Completed 200 OK in 401ms (Views: 392.4ms | ActiveRecord: 3.0ms)
+2015-09-16 14:48:58 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:48:58 +0200
+2015-09-16 14:48:58 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:48:58 INFO --   Rendered systemusers/index.html.erb within layouts/application (445.4ms)
+2015-09-16 14:48:58 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-16 14:48:58 INFO -- Completed 200 OK in 455ms (Views: 446.3ms | ActiveRecord: 3.2ms)
+2015-09-16 14:51:06 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:51:06 +0200
+2015-09-16 14:51:06 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:51:06 INFO --   Rendered systemusers/index.html.erb within layouts/application (417.6ms)
+2015-09-16 14:51:06 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-16 14:51:06 INFO -- Completed 200 OK in 427ms (Views: 418.6ms | ActiveRecord: 3.0ms)
+2015-09-16 14:51:19 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:51:19 +0200
+2015-09-16 14:51:19 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:51:19 INFO --   Rendered systemusers/index.html.erb within layouts/application (160.4ms)
+2015-09-16 14:51:19 INFO --   Rendered layouts/_navbar.html.erb (0.5ms)
+2015-09-16 14:51:19 INFO -- Completed 200 OK in 166ms (Views: 160.9ms | ActiveRecord: 3.3ms)
+2015-09-16 14:53:52 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:53:52 +0200
+2015-09-16 14:53:52 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:53:53 INFO --   Rendered systemusers/index.html.erb within layouts/application (441.4ms)
+2015-09-16 14:53:53 INFO --   Rendered layouts/_navbar.html.erb (0.3ms)
+2015-09-16 14:53:53 INFO -- Completed 200 OK in 451ms (Views: 442.0ms | ActiveRecord: 3.0ms)
+2015-09-16 14:53:59 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:53:59 +0200
+2015-09-16 14:53:59 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:53:59 INFO --   Rendered systemusers/index.html.erb within layouts/application (153.2ms)
+2015-09-16 14:53:59 INFO --   Rendered layouts/_navbar.html.erb (10.6ms)
+2015-09-16 14:53:59 INFO -- Completed 500 Internal Server Error in 167ms
+2015-09-16 14:53:59 FATAL -- 
+ActionView::Template::Error (undefined method `change_locale_path' for #<#<Class:0x007fd09de31848>:0x007fd09df5aaf8>):
+    25:           <!-- <li><%= link_to "Environments", puppet_modules_path %></li> //-->
+    26:         </ul>
+    27:         <ul class="nav pull-right">
+    28: 	  <li><%= link_to t('menu.languages.en'), change_locale_path(:en) %> | <%= link_to t('menu.languages.fr'), change_locale_path(:fr) %></li>
+    29:           <li><%= link_to "Dashboard", PuppetManager::Application::DASHBOARD_LINK %></li>
+    30:           <li><%= link_to content_tag(:i, '', class: 'icon-user'), users_path %></li>
+    31:           <li><%= link_to content_tag(:i, '', class: 'icon-signout'), signout_path %></li>
+  app/views/layouts/_navbar.html.erb:28:in `_app_views_layouts__navbar_html_erb___4541195039995285519_70266992507940'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__166148352424580072_70266972567880'
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-16 14:53:59 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+2015-09-16 14:53:59 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+2015-09-16 14:53:59 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+2015-09-16 14:58:51 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 14:58:51 +0200
+2015-09-16 14:58:51 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 14:58:51 INFO --   Rendered systemusers/index.html.erb within layouts/application (176.8ms)
+2015-09-16 14:58:51 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 14:58:51 INFO -- Completed 200 OK in 229ms (Views: 180.3ms | ActiveRecord: 5.6ms)
+2015-09-16 15:02:25 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:02:25 +0200
+2015-09-16 15:02:25 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:02:25 INFO --   Rendered systemusers/index.html.erb within layouts/application (119.2ms)
+2015-09-16 15:02:25 INFO --   Rendered layouts/_navbar.html.erb (1.4ms)
+2015-09-16 15:02:25 INFO -- Completed 200 OK in 126ms (Views: 120.7ms | ActiveRecord: 3.5ms)
+2015-09-16 15:02:33 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:02:33 +0200
+2015-09-16 15:02:33 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:02:33 INFO --   Rendered systemusers/index.html.erb within layouts/application (119.5ms)
+2015-09-16 15:02:33 INFO --   Rendered layouts/_navbar.html.erb (54.2ms)
+2015-09-16 15:02:33 INFO -- Completed 200 OK in 180ms (Views: 175.2ms | ActiveRecord: 2.8ms)
+2015-09-16 15:02:39 INFO -- Started GET "/change_locale/en" for 127.0.0.1 at 2015-09-16 15:02:39 +0200
+2015-09-16 15:02:39 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:02:39 INFO --   Parameters: {"locale"=>"en"}
+2015-09-16 15:02:39 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-09-16 15:02:39 INFO -- Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+2015-09-16 15:02:39 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:02:39 +0200
+2015-09-16 15:02:39 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:02:39 INFO --   Rendered systemusers/index.html.erb within layouts/application (59.6ms)
+2015-09-16 15:02:39 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-09-16 15:02:39 INFO -- Completed 200 OK in 66ms (Views: 62.2ms | ActiveRecord: 2.3ms)
+2015-09-16 15:02:43 INFO -- Started GET "/change_locale/fr" for 127.0.0.1 at 2015-09-16 15:02:43 +0200
+2015-09-16 15:02:43 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:02:43 INFO --   Parameters: {"locale"=>"fr"}
+2015-09-16 15:02:43 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-09-16 15:02:43 INFO -- Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+2015-09-16 15:02:44 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:02:44 +0200
+2015-09-16 15:02:44 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:02:44 INFO --   Rendered systemusers/index.html.erb within layouts/application (97.1ms)
+2015-09-16 15:02:44 INFO --   Rendered layouts/_navbar.html.erb (1.0ms)
+2015-09-16 15:02:44 INFO -- Completed 200 OK in 102ms (Views: 98.8ms | ActiveRecord: 2.2ms)
+2015-09-16 15:02:54 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:02:54 +0200
+2015-09-16 15:02:54 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:02:54 INFO --   Rendered systemusers/index.html.erb within layouts/application (91.8ms)
+2015-09-16 15:02:54 INFO --   Rendered layouts/_navbar.html.erb (1.0ms)
+2015-09-16 15:02:54 INFO -- Completed 200 OK in 97ms (Views: 92.6ms | ActiveRecord: 3.0ms)
+2015-09-16 15:03:24 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:03:24 +0200
+2015-09-16 15:03:24 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:03:24 INFO --   Rendered systemusers/index.html.erb within layouts/application (183.4ms)
+2015-09-16 15:03:24 INFO --   Rendered layouts/_navbar.html.erb (1.1ms)
+2015-09-16 15:03:24 INFO -- Completed 200 OK in 193ms (Views: 188.7ms | ActiveRecord: 3.0ms)
+2015-09-16 15:03:55 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:03:55 +0200
+2015-09-16 15:03:55 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:03:55 INFO --   Rendered systemusers/index.html.erb within layouts/application (113.0ms)
+2015-09-16 15:03:55 INFO --   Rendered layouts/_navbar.html.erb (1.9ms)
+2015-09-16 15:03:55 INFO -- Completed 200 OK in 120ms (Views: 115.2ms | ActiveRecord: 3.2ms)
+2015-09-16 15:04:16 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:04:16 +0200
+2015-09-16 15:04:16 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:04:16 INFO --   Rendered systemusers/index.html.erb within layouts/application (192.8ms)
+2015-09-16 15:04:16 INFO --   Rendered layouts/_navbar.html.erb (1.4ms)
+2015-09-16 15:04:16 INFO -- Completed 200 OK in 201ms (Views: 195.5ms | ActiveRecord: 3.4ms)
+2015-09-16 15:04:29 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:04:29 +0200
+2015-09-16 15:04:29 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:04:30 INFO --   Rendered systemusers/index.html.erb within layouts/application (425.6ms)
+2015-09-16 15:04:30 INFO --   Rendered layouts/_navbar.html.erb (0.5ms)
+2015-09-16 15:04:30 INFO -- Completed 200 OK in 434ms (Views: 426.1ms | ActiveRecord: 2.9ms)
+2015-09-16 15:04:33 INFO -- Started GET "/change_locale/en" for 127.0.0.1 at 2015-09-16 15:04:33 +0200
+2015-09-16 15:04:33 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:04:33 INFO --   Parameters: {"locale"=>"en"}
+2015-09-16 15:04:33 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-09-16 15:04:33 INFO -- Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+2015-09-16 15:04:34 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:04:34 +0200
+2015-09-16 15:04:34 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:04:34 INFO --   Rendered systemusers/index.html.erb within layouts/application (110.1ms)
+2015-09-16 15:04:34 INFO --   Rendered layouts/_navbar.html.erb (1.2ms)
+2015-09-16 15:04:34 INFO -- Completed 200 OK in 116ms (Views: 112.6ms | ActiveRecord: 2.3ms)
+2015-09-16 15:04:37 INFO -- Started GET "/change_locale/ru" for 127.0.0.1 at 2015-09-16 15:04:37 +0200
+2015-09-16 15:04:37 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:04:37 INFO --   Parameters: {"locale"=>"ru"}
+2015-09-16 15:04:37 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-09-16 15:04:37 INFO -- Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+2015-09-16 15:04:38 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:04:38 +0200
+2015-09-16 15:04:38 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:04:38 INFO --   Rendered systemusers/index.html.erb within layouts/application (56.9ms)
+2015-09-16 15:04:38 INFO --   Rendered layouts/_navbar.html.erb (1.1ms)
+2015-09-16 15:04:38 INFO -- Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 2.3ms)
+2015-09-16 15:06:17 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:06:17 +0200
+2015-09-16 15:06:17 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:06:17 INFO --   Rendered systemusers/index.html.erb within layouts/application (399.0ms)
+2015-09-16 15:06:17 INFO --   Rendered layouts/_navbar.html.erb (1.2ms)
+2015-09-16 15:06:17 INFO -- Completed 200 OK in 408ms (Views: 400.4ms | ActiveRecord: 2.9ms)
+2015-09-16 15:06:29 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:06:29 +0200
+2015-09-16 15:06:29 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:06:29 INFO --   Rendered systemusers/index.html.erb within layouts/application (95.6ms)
+2015-09-16 15:06:29 INFO --   Rendered layouts/_navbar.html.erb (1.6ms)
+2015-09-16 15:06:29 INFO -- Completed 200 OK in 102ms (Views: 97.3ms | ActiveRecord: 3.0ms)
+2015-09-16 15:09:51 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:09:51 +0200
+2015-09-16 15:09:51 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:09:52 INFO --   Rendered systemusers/index.html.erb within layouts/application (388.3ms)
+2015-09-16 15:09:52 INFO --   Rendered layouts/_navbar.html.erb (1.3ms)
+2015-09-16 15:09:52 INFO -- Completed 200 OK in 397ms (Views: 389.7ms | ActiveRecord: 2.9ms)
+2015-09-16 15:11:00 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:11:00 +0200
+2015-09-16 15:11:01 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:11:01 INFO --   Rendered systemusers/index.html.erb within layouts/application (464.4ms)
+2015-09-16 15:11:01 INFO --   Rendered layouts/_navbar.html.erb (1.3ms)
+2015-09-16 15:11:01 INFO -- Completed 200 OK in 475ms (Views: 466.3ms | ActiveRecord: 3.0ms)
+2015-09-16 15:11:27 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:11:27 +0200
+2015-09-16 15:11:27 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:11:27 INFO --   Rendered systemusers/index.html.erb within layouts/application (107.2ms)
+2015-09-16 15:11:27 INFO --   Rendered layouts/_navbar.html.erb (1.7ms)
+2015-09-16 15:11:27 INFO -- Completed 200 OK in 113ms (Views: 108.9ms | ActiveRecord: 3.2ms)
+2015-09-16 15:12:05 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:12:05 +0200
+2015-09-16 15:12:05 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:12:06 INFO --   Rendered systemusers/index.html.erb within layouts/application (497.8ms)
+2015-09-16 15:12:06 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:12:06 INFO -- Completed 200 OK in 509ms (Views: 498.8ms | ActiveRecord: 4.1ms)
+2015-09-16 15:14:51 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:14:51 +0200
+2015-09-16 15:14:51 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:14:52 INFO --   Rendered systemusers/index.html.erb within layouts/application (430.2ms)
+2015-09-16 15:14:52 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:14:52 INFO -- Completed 200 OK in 440ms (Views: 431.2ms | ActiveRecord: 3.3ms)
+2015-09-16 15:15:10 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:15:10 +0200
+2015-09-16 15:15:10 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:15:10 INFO --   Rendered systemusers/index.html.erb within layouts/application (163.6ms)
+2015-09-16 15:15:10 INFO --   Rendered layouts/_navbar.html.erb (0.8ms)
+2015-09-16 15:15:10 INFO -- Completed 200 OK in 170ms (Views: 164.7ms | ActiveRecord: 3.1ms)
+2015-09-16 15:15:14 INFO -- Started GET "/change_locale/en" for 127.0.0.1 at 2015-09-16 15:15:14 +0200
+2015-09-16 15:15:14 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:15:14 INFO --   Parameters: {"locale"=>"en"}
+2015-09-16 15:15:14 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-09-16 15:15:14 INFO -- Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+2015-09-16 15:15:14 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:15:14 +0200
+2015-09-16 15:15:14 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:15:14 INFO --   Rendered systemusers/index.html.erb within layouts/application (92.0ms)
+2015-09-16 15:15:14 INFO --   Rendered layouts/_navbar.html.erb (1.2ms)
+2015-09-16 15:15:14 INFO -- Completed 200 OK in 97ms (Views: 94.0ms | ActiveRecord: 2.3ms)
+2015-09-16 15:15:21 INFO -- Started GET "/change_locale/ru" for 127.0.0.1 at 2015-09-16 15:15:21 +0200
+2015-09-16 15:15:21 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:15:21 INFO --   Parameters: {"locale"=>"ru"}
+2015-09-16 15:15:21 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-09-16 15:15:21 INFO -- Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+2015-09-16 15:15:22 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:15:22 +0200
+2015-09-16 15:15:22 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:15:22 INFO --   Rendered systemusers/index.html.erb within layouts/application (108.8ms)
+2015-09-16 15:15:22 INFO --   Rendered layouts/_navbar.html.erb (1.3ms)
+2015-09-16 15:15:22 INFO -- Completed 200 OK in 114ms (Views: 111.1ms | ActiveRecord: 2.4ms)
+2015-09-16 15:18:37 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:18:37 +0200
+2015-09-16 15:18:37 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:18:38 INFO --   Rendered systemusers/index.html.erb within layouts/application (432.5ms)
+2015-09-16 15:18:38 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:18:38 INFO -- Completed 200 OK in 448ms (Views: 436.7ms | ActiveRecord: 3.0ms)
+2015-09-16 15:18:39 INFO -- Started GET "/welcome/index" for 127.0.0.1 at 2015-09-16 15:18:39 +0200
+2015-09-16 15:18:39 INFO -- Processing by WelcomeController#index as HTML
+2015-09-16 15:18:39 INFO --   Rendered welcome/index.html.erb within layouts/application (0.5ms)
+2015-09-16 15:18:39 INFO --   Rendered layouts/_navbar.html.erb (1.0ms)
+2015-09-16 15:18:39 INFO -- Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+2015-09-16 15:19:00 INFO -- Started GET "/welcome/index" for 127.0.0.1 at 2015-09-16 15:19:00 +0200
+2015-09-16 15:19:00 INFO -- Processing by WelcomeController#index as HTML
+2015-09-16 15:19:00 INFO --   Rendered welcome/index.html.erb within layouts/application (0.7ms)
+2015-09-16 15:19:00 INFO --   Rendered layouts/_navbar.html.erb (1.3ms)
+2015-09-16 15:19:00 INFO -- Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+2015-09-16 15:20:10 INFO -- Started GET "/welcome/index" for 127.0.0.1 at 2015-09-16 15:20:10 +0200
+2015-09-16 15:20:10 INFO -- Processing by WelcomeController#index as HTML
+2015-09-16 15:20:10 INFO --   Rendered welcome/index.html.erb within layouts/application (350.9ms)
+2015-09-16 15:20:10 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:20:10 INFO -- Completed 200 OK in 357ms (Views: 354.4ms | ActiveRecord: 0.7ms)
+2015-09-16 15:20:15 INFO -- Started GET "/change_locale/en" for 127.0.0.1 at 2015-09-16 15:20:15 +0200
+2015-09-16 15:20:15 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:20:15 INFO --   Parameters: {"locale"=>"en"}
+2015-09-16 15:20:15 INFO -- Redirected to http://127.0.0.1:3000/welcome/index
+2015-09-16 15:20:15 INFO -- Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+2015-09-16 15:20:16 INFO -- Started GET "/welcome/index" for 127.0.0.1 at 2015-09-16 15:20:16 +0200
+2015-09-16 15:20:16 INFO -- Processing by WelcomeController#index as HTML
+2015-09-16 15:20:16 INFO --   Rendered welcome/index.html.erb within layouts/application (0.5ms)
+2015-09-16 15:20:16 INFO --   Rendered layouts/_navbar.html.erb (1.0ms)
+2015-09-16 15:20:16 INFO -- Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+2015-09-16 15:20:20 INFO -- Started GET "/change_locale/ru" for 127.0.0.1 at 2015-09-16 15:20:20 +0200
+2015-09-16 15:20:20 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:20:20 INFO --   Parameters: {"locale"=>"ru"}
+2015-09-16 15:20:20 INFO -- Redirected to http://127.0.0.1:3000/welcome/index
+2015-09-16 15:20:20 INFO -- Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+2015-09-16 15:20:20 INFO -- Started GET "/welcome/index" for 127.0.0.1 at 2015-09-16 15:20:20 +0200
+2015-09-16 15:20:20 INFO -- Processing by WelcomeController#index as HTML
+2015-09-16 15:20:20 INFO --   Rendered welcome/index.html.erb within layouts/application (0.4ms)
+2015-09-16 15:20:20 INFO --   Rendered layouts/_navbar.html.erb (0.9ms)
+2015-09-16 15:20:20 INFO -- Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+2015-09-16 15:21:26 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-09-16 15:21:26 +0200
+2015-09-16 15:21:26 FATAL -- 
+LoadError (cannot load such file -- puppet):
+  app/controllers/nodes_controller.rb:2:in `<top (required)>'
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-16 15:21:26 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+2015-09-16 15:21:26 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+2015-09-16 15:21:26 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+2015-09-16 15:21:26 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+2015-09-16 15:21:26 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-09-16 15:21:26 +0200
+2015-09-16 15:21:26 FATAL -- 
+LoadError (cannot load such file -- puppet):
+  app/controllers/nodes_controller.rb:2:in `<top (required)>'
+  config/initializers/quiet_assets.rb:7:in `call_with_quiet_assets'
+
+
+2015-09-16 15:21:26 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+2015-09-16 15:21:26 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+2015-09-16 15:21:26 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+2015-09-16 15:21:26 INFO --   Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+2015-09-16 15:22:37 INFO -- Started GET "/welcome/index" for 127.0.0.1 at 2015-09-16 15:22:37 +0200
+2015-09-16 15:22:37 INFO -- Processing by WelcomeController#index as HTML
+2015-09-16 15:22:38 INFO --   Rendered welcome/index.html.erb within layouts/application (365.8ms)
+2015-09-16 15:22:38 INFO --   Rendered layouts/_navbar.html.erb (1.1ms)
+2015-09-16 15:22:38 INFO -- Completed 200 OK in 374ms (Views: 370.7ms | ActiveRecord: 0.7ms)
+2015-09-16 15:22:42 INFO -- Started GET "/change_locale/ru" for 127.0.0.1 at 2015-09-16 15:22:42 +0200
+2015-09-16 15:22:42 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:22:42 INFO --   Parameters: {"locale"=>"ru"}
+2015-09-16 15:22:42 INFO -- Redirected to http://127.0.0.1:3000/welcome/index
+2015-09-16 15:22:42 INFO -- Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+2015-09-16 15:22:43 INFO -- Started GET "/welcome/index" for 127.0.0.1 at 2015-09-16 15:22:43 +0200
+2015-09-16 15:22:43 INFO -- Processing by WelcomeController#index as HTML
+2015-09-16 15:22:43 INFO --   Rendered welcome/index.html.erb within layouts/application (0.2ms)
+2015-09-16 15:22:43 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:22:43 INFO -- Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+2015-09-16 15:22:47 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:22:47 +0200
+2015-09-16 15:22:47 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:22:47 INFO --   Rendered systemusers/index.html.erb within layouts/application (180.2ms)
+2015-09-16 15:22:47 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:22:47 INFO -- Completed 200 OK in 191ms (Views: 181.2ms | ActiveRecord: 3.9ms)
+2015-09-16 15:22:50 INFO -- Started GET "/change_locale/en" for 127.0.0.1 at 2015-09-16 15:22:50 +0200
+2015-09-16 15:22:50 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:22:50 INFO --   Parameters: {"locale"=>"en"}
+2015-09-16 15:22:50 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-09-16 15:22:50 INFO -- Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+2015-09-16 15:22:51 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:22:51 +0200
+2015-09-16 15:22:51 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:22:51 INFO --   Rendered systemusers/index.html.erb within layouts/application (94.6ms)
+2015-09-16 15:22:51 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:22:51 INFO -- Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 2.0ms)
+2015-09-16 15:26:00 INFO -- Started GET "/change_locale/ru" for 127.0.0.1 at 2015-09-16 15:26:00 +0200
+2015-09-16 15:26:00 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:26:00 INFO --   Parameters: {"locale"=>"ru"}
+2015-09-16 15:26:00 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-09-16 15:26:00 INFO -- Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+2015-09-16 15:26:00 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:26:00 +0200
+2015-09-16 15:26:00 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:26:00 INFO --   Rendered systemusers/index.html.erb within layouts/application (56.4ms)
+2015-09-16 15:26:00 INFO --   Rendered layouts/_navbar.html.erb (0.5ms)
+2015-09-16 15:26:00 INFO -- Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 2.4ms)
+2015-09-16 15:26:12 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-09-16 15:26:12 +0200
+2015-09-16 15:26:12 INFO -- Processing by SystemrolesController#index as HTML
+2015-09-16 15:26:12 INFO --   Rendered systemroles/index.html.erb within layouts/application (4.9ms)
+2015-09-16 15:26:12 INFO --   Rendered layouts/_navbar.html.erb (0.8ms)
+2015-09-16 15:26:12 INFO -- Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.5ms)
+2015-09-16 15:27:22 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-09-16 15:27:22 +0200
+2015-09-16 15:27:22 INFO -- Processing by SystemrolesController#index as HTML
+2015-09-16 15:27:23 INFO --   Rendered systemroles/index.html.erb within layouts/application (321.3ms)
+2015-09-16 15:27:23 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:27:23 INFO -- Completed 200 OK in 332ms (Views: 324.2ms | ActiveRecord: 1.0ms)
+2015-09-16 15:28:26 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-09-16 15:28:26 +0200
+2015-09-16 15:28:26 INFO -- Processing by SystemrolesController#index as HTML
+2015-09-16 15:28:26 INFO --   Rendered systemroles/index.html.erb within layouts/application (5.2ms)
+2015-09-16 15:28:26 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:28:26 INFO -- Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+2015-09-16 15:28:46 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:28:46 +0200
+2015-09-16 15:28:46 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:28:46 INFO --   Rendered systemusers/index.html.erb within layouts/application (163.7ms)
+2015-09-16 15:28:46 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:28:46 INFO -- Completed 200 OK in 173ms (Views: 163.0ms | ActiveRecord: 4.3ms)
+2015-09-16 15:28:50 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-09-16 15:28:50 +0200
+2015-09-16 15:28:50 INFO -- Processing by SystemrolesController#index as HTML
+2015-09-16 15:28:50 INFO --   Rendered systemroles/index.html.erb within layouts/application (8.0ms)
+2015-09-16 15:28:50 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:28:50 INFO -- Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+2015-09-16 15:29:50 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-09-16 15:29:50 +0200
+2015-09-16 15:29:51 INFO -- Processing by SystemrolesController#index as HTML
+2015-09-16 15:29:51 INFO --   Rendered systemroles/index.html.erb within layouts/application (300.6ms)
+2015-09-16 15:29:51 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:29:51 INFO -- Completed 200 OK in 311ms (Views: 303.5ms | ActiveRecord: 0.9ms)
+2015-09-16 15:29:55 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:29:55 +0200
+2015-09-16 15:29:55 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:29:56 INFO --   Rendered systemusers/index.html.erb within layouts/application (180.0ms)
+2015-09-16 15:29:56 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:29:56 INFO -- Completed 200 OK in 193ms (Views: 183.0ms | ActiveRecord: 3.9ms)
+2015-09-16 15:30:01 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:30:01 +0200
+2015-09-16 15:30:01 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:30:01 INFO --   Rendered users/index.html.erb within layouts/application (1.1ms)
+2015-09-16 15:30:01 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:30:01 INFO -- Completed 200 OK in 19ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+2015-09-16 15:30:48 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:30:48 +0200
+2015-09-16 15:30:48 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:30:48 INFO --   Rendered users/index.html.erb within layouts/application (2.9ms)
+2015-09-16 15:30:48 INFO --   Rendered layouts/_navbar.html.erb (1.7ms)
+2015-09-16 15:30:48 INFO -- Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.4ms)
+2015-09-16 15:31:15 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:31:15 +0200
+2015-09-16 15:31:16 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:31:16 INFO --   Rendered users/index.html.erb within layouts/application (326.9ms)
+2015-09-16 15:31:16 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:31:16 INFO -- Completed 200 OK in 335ms (Views: 330.2ms | ActiveRecord: 1.2ms)
+2015-09-16 15:31:37 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:31:37 +0200
+2015-09-16 15:31:37 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:31:37 INFO --   Rendered users/index.html.erb within layouts/application (345.2ms)
+2015-09-16 15:31:37 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:31:37 INFO -- Completed 200 OK in 353ms (Views: 348.4ms | ActiveRecord: 0.7ms)
+2015-09-16 15:31:49 INFO -- Started GET "/change_locale/en" for 127.0.0.1 at 2015-09-16 15:31:49 +0200
+2015-09-16 15:31:49 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:31:49 INFO --   Parameters: {"locale"=>"en"}
+2015-09-16 15:31:49 INFO -- Redirected to http://127.0.0.1:3000/users
+2015-09-16 15:31:49 INFO -- Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+2015-09-16 15:31:49 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:31:49 +0200
+2015-09-16 15:31:49 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:31:50 INFO --   Rendered users/index.html.erb within layouts/application (310.4ms)
+2015-09-16 15:31:50 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:31:50 INFO -- Completed 200 OK in 317ms (Views: 313.7ms | ActiveRecord: 0.4ms)
+2015-09-16 15:31:54 INFO -- Started GET "/change_locale/ru" for 127.0.0.1 at 2015-09-16 15:31:54 +0200
+2015-09-16 15:31:54 INFO -- Processing by SettingsController#change_locale as HTML
+2015-09-16 15:31:54 INFO --   Parameters: {"locale"=>"ru"}
+2015-09-16 15:31:54 INFO -- Redirected to http://127.0.0.1:3000/users
+2015-09-16 15:31:54 INFO -- Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+2015-09-16 15:31:54 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:31:54 +0200
+2015-09-16 15:31:54 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:31:54 INFO --   Rendered users/index.html.erb within layouts/application (2.0ms)
+2015-09-16 15:31:54 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:31:54 INFO -- Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+2015-09-16 15:31:58 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:31:58 +0200
+2015-09-16 15:31:58 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:31:58 INFO --   Rendered systemusers/index.html.erb within layouts/application (187.3ms)
+2015-09-16 15:31:58 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:31:58 INFO -- Completed 200 OK in 201ms (Views: 189.2ms | ActiveRecord: 4.3ms)
+2015-09-16 15:32:52 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:32:52 +0200
+2015-09-16 15:32:53 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:32:53 INFO --   Rendered users/index.html.erb within layouts/application (280.2ms)
+2015-09-16 15:32:53 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:32:53 INFO -- Completed 200 OK in 286ms (Views: 283.1ms | ActiveRecord: 0.6ms)
+2015-09-16 15:33:03 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:33:03 +0200
+2015-09-16 15:33:03 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:33:03 INFO --   Rendered users/index.html.erb within layouts/application (1.2ms)
+2015-09-16 15:33:03 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:33:03 INFO -- Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+2015-09-16 15:33:10 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:33:10 +0200
+2015-09-16 15:33:10 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:33:10 INFO --   Rendered systemusers/index.html.erb within layouts/application (139.1ms)
+2015-09-16 15:33:10 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:33:10 INFO -- Completed 200 OK in 153ms (Views: 143.0ms | ActiveRecord: 4.1ms)
+2015-09-16 15:33:20 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:33:20 +0200
+2015-09-16 15:33:20 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:33:20 INFO --   Rendered users/index.html.erb within layouts/application (2.0ms)
+2015-09-16 15:33:20 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:33:20 INFO -- Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+2015-09-16 15:33:39 INFO -- Started GET "/users" for 127.0.0.1 at 2015-09-16 15:33:39 +0200
+2015-09-16 15:33:39 INFO -- Processing by UsersController#index as HTML
+2015-09-16 15:33:39 INFO --   Rendered users/index.html.erb within layouts/application (371.4ms)
+2015-09-16 15:33:39 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-09-16 15:33:39 INFO -- Completed 200 OK in 379ms (Views: 374.8ms | ActiveRecord: 0.8ms)
+2015-09-16 15:33:44 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:33:44 +0200
+2015-09-16 15:33:44 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:33:44 INFO --   Rendered systemusers/index.html.erb within layouts/application (178.7ms)
+2015-09-16 15:33:44 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-09-16 15:33:44 INFO -- Completed 200 OK in 189ms (Views: 177.3ms | ActiveRecord: 5.8ms)
+2015-09-16 15:45:03 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-09-16 15:45:03 +0200
+2015-09-16 15:45:03 INFO -- Processing by SystemusersController#index as HTML
+2015-09-16 15:45:04 INFO --   Rendered systemusers/index.html.erb within layouts/application (416.2ms)
+2015-09-16 15:45:04 INFO --   Rendered layouts/_navbar.html.erb (1.3ms)
+2015-09-16 15:45:04 INFO -- Completed 200 OK in 456ms (Views: 407.7ms | ActiveRecord: 34.2ms)

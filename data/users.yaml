@@ -1,0 +1,18 @@
+---
+users::admincs:
+  myself:
+    uid: '20002'
+    gid: admin
+    comment: My special account
+    managehome: 'false'
+    groups:
+      - adm
+    optional_groups:
+      - crontab
+      - www-data
+      - ssh
+      - sudo
+
+users::groups:
+  admin:
+    gid: '30000'

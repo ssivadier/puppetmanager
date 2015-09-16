@@ -1,0 +1,238 @@
+--- !ruby/object:Puppet::Node
+  name: homenas.labohome.int
+  classes: []
+  parameters: 
+    kernel: Linux
+    system_uptime: "{\x22seconds\x22=>1933, \x22hours\x22=>0, \x22days\x22=>0, \x22uptime\x22=>\x220:32 hours\x22}"
+    gid: root
+    lsbmajdistrelease: "7"
+    hardwaremodel: x86_64
+    kernelrelease: "3.2.0-4-amd64"
+    puppetversion: "3.7.4"
+    rubyplatform: x86_64-linux
+    blockdevice_sr0_size: "1073741312"
+    blockdevice_sr0_vendor: HL-DT-ST
+    blockdevice_sr0_model: "DVD-RAM GSA-H55N"
+    blockdevice_sdb_size: "1000204886016"
+    blockdevice_sdb_vendor: ATA
+    blockdevice_sdb_model: "SAMSUNG HD103UJ"
+    blockdevice_sda_size: "1000204886016"
+    blockdevice_sda_vendor: ATA
+    blockdevice_sda_model: "SAMSUNG HD103UJ"
+    blockdevices: "sda,sdb,sr0"
+    path: "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
+    partitions: "{\x22sdb1\x22=>{\x22size\x22=>\x2219529728\x22, \x22label\x22=>\x22homenas:0\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb2\x22=>{\x22size\x22=>\x222\x22}, \x22sdb3\x22=>{\x22size\x22=>\x221757820928\x22, \x22label\x22=>\x22homenas:2\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb5\x22=>{\x22size\x22=>\x2239059456\x22, \x22label\x22=>\x22homenas:4\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb6\x22=>{\x22size\x22=>\x2258591232\x22, \x22label\x22=>\x22homenas:5\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb7\x22=>{\x22size\x22=>\x2219529728\x22, \x22label\x22=>\x22homenas:6\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb8\x22=>{\x22size\x22=>\x221951744\x22, \x22label\x22=>\x22homenas:7\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb9\x22=>{\x22size\x22=>\x2257028608\x22, \x22label\x22=>\x22homenas:8\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sda1\x22=>{\x22size\x22=>\x2219529728\x22, \x22filesystem\x22=>\x22ext3\x22}, \x22sda2\x22=>{\x22size\x22=>\x222\x22}, \x22sda3\x22=>{\x22size\x22=>\x221757820928\x22, \x22filesystem\x22=>\x22btrfs\x22}, \x22sda5\x22=>{\x22size\x22=>\x2239059456\x22, \x22filesystem\x22=>\x22btrfs\x22}, \x22sda6\x22=>{\x22size\x22=>\x2258591232\x22, \x22filesystem\x22=>\x22btrfs\x22}, \x22sda7\x22=>{\x22size\x22=>\x2219529728\x22, \x22filesystem\x22=>\x22swap\x22}, \x22sda8\x22=>{\x22size\x22=>\x221951744\x22, \x22label\x22=>\x22homenas:7\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sda9\x22=>{\x22size\x22=>\x2257028608\x22, \x22filesystem\x22=>\x22btrfs\x22}}"
+    macaddress: "80:ee:73:10:94:b7"
+    rubyversion: "1.9.3"
+    hostname: homenas
+    operatingsystem: Debian
+    lsbdistrelease: "7.8"
+    timezone: CET
+    facterversion: "2.4.1"
+    processors: "{\x22models\x22=>[\x22Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz\x22, \x22Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz\x22], \x22count\x22=>2, \x22physicalcount\x22=>1}"
+    zfs_version: "4"
+    uptime_seconds: "1933"
+    uptime: "0:32 hours"
+    ps: "ps -ef"
+    operatingsystemmajrelease: "7"
+    kernelversion: "3.2.0"
+    virtual: physical
+    is_virtual: "false"
+    lsbdistdescription: "Debian GNU/Linux 7.8 (wheezy)"
+    fqdn: homenas.labohome.int
+    selinux: "false"
+    netmask: "255.255.255.0"
+    interfaces: "eth0,eth1,lo"
+    macaddress_eth0: "80:ee:73:10:94:b7"
+    mtu_eth0: "1500"
+    ipaddress_eth1: "192.168.1.252"
+    macaddress_eth1: "00:15:e9:da:0c:99"
+    netmask_eth1: "255.255.255.0"
+    mtu_eth1: "1500"
+    ipaddress_lo: "127.0.0.1"
+    netmask_lo: "255.0.0.0"
+    mtu_lo: "16436"
+    id: root
+    lsbdistcodename: wheezy
+    zpool_version: "23"
+    os: "{\x22name\x22=>\x22Debian\x22, \x22family\x22=>\x22Debian\x22, \x22release\x22=>{\x22major\x22=>\x227\x22, \x22minor\x22=>\x228\x22, \x22full\x22=>\x227.8\x22}, \x22lsb\x22=>{\x22distcodename\x22=>\x22wheezy\x22, \x22distid\x22=>\x22Debian\x22, \x22distdescription\x22=>\x22Debian GNU/Linux 7.8 (wheezy)\x22, \x22distrelease\x22=>\x227.8\x22, \x22majdistrelease\x22=>\x227\x22, \x22minordistrelease\x22=>\x228\x22}}"
+    architecture: amd64
+    operatingsystemrelease: "7.8"
+    osfamily: Debian
+    lsbdistid: Debian
+    rubysitedir: /usr/local/lib/site_ruby/1.9.1
+    network_eth1: "192.168.1.0"
+    network_lo: "127.0.0.0"
+    lsbminordistrelease: "8"
+    uptime_days: "0"
+    ipaddress: "192.168.1.252"
+    memorysize: "3.84 GB"
+    memoryfree: "2.46 GB"
+    swapsize: "9.31 GB"
+    swapfree: "9.31 GB"
+    swapsize_mb: "9534.93"
+    swapfree_mb: "9534.92"
+    memorysize_mb: "3933.79"
+    memoryfree_mb: "2524.14"
+    filesystems: "btrfs,ext3"
+    hardwareisa: unknown
+    uniqueid: a8c0fc01
+    sshdsakey: "AAAAB3NzaC1kc3MAAACBAMhupE5BGLUPJqxNSxZ2xeHSS/NUVZ81oO1gv24tNWyH8caadeqIoXEDonID2BYZjKXDp6owGinlpujyartwmAd3KEyRs8hiI8geDtTHuTOz+QjjQkBcIELBYxiBBosoR+noevk9ugZLw+LfMw8MpwdJ5RGTS8zvbKgryRZhCFB9AAAAFQDCOL7XnELclGDDLMZqLOQtK3WZJQAAAIAD29y0OydVHyMfVU9oXtaRGyaKbE7zDMaiFVCPi7nPgsMnDeGd5vWAYsEcp0LLz/T80IsJEOnjjV6GwtTXg6dPhR3+W4LEnGf801m9O0UanyipKUY4o8T204Et8gPFbKEyDbnzbwN9WfV9p96+rh4qjueaSEvsemQDciXPEjxMiQAAAIAF9RQ9Iitvd8BUd/FnBoQb//GPM9P3VfFz5zUMYYrsZ+pYN4NvGk8i+7j6FkkQ5Gz36++rZ9qw1bBbkrs9M92jhC5jixwxAOXWBPKZYjkqUN9HaNbGnyKRGjYermm4Jdu4JtCUAzazEnJildcFE1a8Hf7L5Mrvgl/ZARoVIC8nuA=="
+    sshfp_dsa: |-
+      SSHFP 2 1 474df92768533d29b6c1db848110e54e4d2c36d5
+      SSHFP 2 2 bb3b15548e4da0148279ae257ea557cea707b5c4b323d640047d8ac782e4f7d8
+    sshrsakey: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCYKCPAbewFp7lTilJiN7+m5cNsNSZnlDRkanhWLqmeAfCQMZSB3PF83XlqSg0FSxg1FuE13YlZ/rJrysK9EvAHwYxxaCrISRmgC/C1LUaXHHW8X4s6xMsUhJvFsxt3AOYuXpF0cqcB7r+yMZyBrsFBhaJl3tOyPJw2bZbKCZJpEyxooyATfuMtf2D6NLPiKAnZ4IZ99YC43FAGw9+kCOIIG0+PUi59QmFATs6cUoNy885lljBZAxO023WfjDLQ/MozOyVpDmj+EqCqPQyx/yfso4876ywsReeUx5GTGw6ZTk80qpTMQIbQh2CuMArm5uAV8a2aaO2PygG1uFkQsWlD"
+    sshfp_rsa: |-
+      SSHFP 1 1 6f2db67b55e3e329265604dd3332452c53c50c4e
+      SSHFP 1 2 f038a3e6744e79bb87967c729838c8385f3b0e1b2a33163772ee926c33e1ff77
+    uptime_hours: "0"
+    physicalprocessorcount: "1"
+    boardmanufacturer: "Shuttle Inc"
+    boardproductname: FG41
+    boardserialnumber: "To be filled by O.E.M."
+    bios_vendor: "American Megatrends Inc."
+    bios_version: "080015"
+    bios_release_date: "01/31/2011"
+    manufacturer: "Shuttle Inc"
+    productname: SG41
+    serialnumber: "0"
+    uuid: "00020003-0004-0005-0006-000700080009"
+    type: Desktop
+    processor0: "Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz"
+    processor1: "Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz"
+    processorcount: "2"
+    kernelmajversion: "3.2"
+    domain: labohome.int
+    root_home: /root
+    puppet_vardir: /var/lib/puppet
+    is_pe: "false"
+    concat_basedir: /var/lib/puppet/concat
+    ip6tables_version: "1.4.14"
+    apt_update_last_success: "1425809428"
+    rabbitmq_erlang_cookie: TRKSPVSOXUENQFQLXLXP
+    iptables_version: "1.4.14"
+    clientcert: homenas.labohome.int
+    clientversion: "3.7.4"
+    clientnoop: "false"
+    "_timestamp": "2015-03-08 11:13:52 +0100"
+    environment: production
+  facts: !ruby/object:Puppet::Node::Facts
+    name: homenas.labohome.int
+    values: 
+      kernel: Linux
+      system_uptime: "{\x22seconds\x22=>1933, \x22hours\x22=>0, \x22days\x22=>0, \x22uptime\x22=>\x220:32 hours\x22}"
+      gid: root
+      lsbmajdistrelease: "7"
+      hardwaremodel: x86_64
+      kernelrelease: "3.2.0-4-amd64"
+      puppetversion: "3.7.4"
+      rubyplatform: x86_64-linux
+      blockdevice_sr0_size: "1073741312"
+      blockdevice_sr0_vendor: HL-DT-ST
+      blockdevice_sr0_model: "DVD-RAM GSA-H55N"
+      blockdevice_sdb_size: "1000204886016"
+      blockdevice_sdb_vendor: ATA
+      blockdevice_sdb_model: "SAMSUNG HD103UJ"
+      blockdevice_sda_size: "1000204886016"
+      blockdevice_sda_vendor: ATA
+      blockdevice_sda_model: "SAMSUNG HD103UJ"
+      blockdevices: "sda,sdb,sr0"
+      path: "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
+      partitions: "{\x22sdb1\x22=>{\x22size\x22=>\x2219529728\x22, \x22label\x22=>\x22homenas:0\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb2\x22=>{\x22size\x22=>\x222\x22}, \x22sdb3\x22=>{\x22size\x22=>\x221757820928\x22, \x22label\x22=>\x22homenas:2\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb5\x22=>{\x22size\x22=>\x2239059456\x22, \x22label\x22=>\x22homenas:4\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb6\x22=>{\x22size\x22=>\x2258591232\x22, \x22label\x22=>\x22homenas:5\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb7\x22=>{\x22size\x22=>\x2219529728\x22, \x22label\x22=>\x22homenas:6\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb8\x22=>{\x22size\x22=>\x221951744\x22, \x22label\x22=>\x22homenas:7\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sdb9\x22=>{\x22size\x22=>\x2257028608\x22, \x22label\x22=>\x22homenas:8\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sda1\x22=>{\x22size\x22=>\x2219529728\x22, \x22filesystem\x22=>\x22ext3\x22}, \x22sda2\x22=>{\x22size\x22=>\x222\x22}, \x22sda3\x22=>{\x22size\x22=>\x221757820928\x22, \x22filesystem\x22=>\x22btrfs\x22}, \x22sda5\x22=>{\x22size\x22=>\x2239059456\x22, \x22filesystem\x22=>\x22btrfs\x22}, \x22sda6\x22=>{\x22size\x22=>\x2258591232\x22, \x22filesystem\x22=>\x22btrfs\x22}, \x22sda7\x22=>{\x22size\x22=>\x2219529728\x22, \x22filesystem\x22=>\x22swap\x22}, \x22sda8\x22=>{\x22size\x22=>\x221951744\x22, \x22label\x22=>\x22homenas:7\x22, \x22filesystem\x22=>\x22linux_raid_member\x22}, \x22sda9\x22=>{\x22size\x22=>\x2257028608\x22, \x22filesystem\x22=>\x22btrfs\x22}}"
+      macaddress: "80:ee:73:10:94:b7"
+      rubyversion: "1.9.3"
+      hostname: homenas
+      operatingsystem: Debian
+      lsbdistrelease: "7.8"
+      timezone: CET
+      facterversion: "2.4.1"
+      processors: "{\x22models\x22=>[\x22Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz\x22, \x22Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz\x22], \x22count\x22=>2, \x22physicalcount\x22=>1}"
+      zfs_version: "4"
+      uptime_seconds: "1933"
+      uptime: "0:32 hours"
+      ps: "ps -ef"
+      operatingsystemmajrelease: "7"
+      kernelversion: "3.2.0"
+      virtual: physical
+      is_virtual: "false"
+      lsbdistdescription: "Debian GNU/Linux 7.8 (wheezy)"
+      fqdn: homenas.labohome.int
+      selinux: "false"
+      netmask: "255.255.255.0"
+      interfaces: "eth0,eth1,lo"
+      macaddress_eth0: "80:ee:73:10:94:b7"
+      mtu_eth0: "1500"
+      ipaddress_eth1: "192.168.1.252"
+      macaddress_eth1: "00:15:e9:da:0c:99"
+      netmask_eth1: "255.255.255.0"
+      mtu_eth1: "1500"
+      ipaddress_lo: "127.0.0.1"
+      netmask_lo: "255.0.0.0"
+      mtu_lo: "16436"
+      id: root
+      lsbdistcodename: wheezy
+      zpool_version: "23"
+      os: "{\x22name\x22=>\x22Debian\x22, \x22family\x22=>\x22Debian\x22, \x22release\x22=>{\x22major\x22=>\x227\x22, \x22minor\x22=>\x228\x22, \x22full\x22=>\x227.8\x22}, \x22lsb\x22=>{\x22distcodename\x22=>\x22wheezy\x22, \x22distid\x22=>\x22Debian\x22, \x22distdescription\x22=>\x22Debian GNU/Linux 7.8 (wheezy)\x22, \x22distrelease\x22=>\x227.8\x22, \x22majdistrelease\x22=>\x227\x22, \x22minordistrelease\x22=>\x228\x22}}"
+      architecture: amd64
+      operatingsystemrelease: "7.8"
+      osfamily: Debian
+      lsbdistid: Debian
+      rubysitedir: /usr/local/lib/site_ruby/1.9.1
+      network_eth1: "192.168.1.0"
+      network_lo: "127.0.0.0"
+      lsbminordistrelease: "8"
+      uptime_days: "0"
+      ipaddress: "192.168.1.252"
+      memorysize: "3.84 GB"
+      memoryfree: "2.46 GB"
+      swapsize: "9.31 GB"
+      swapfree: "9.31 GB"
+      swapsize_mb: "9534.93"
+      swapfree_mb: "9534.92"
+      memorysize_mb: "3933.79"
+      memoryfree_mb: "2524.14"
+      filesystems: "btrfs,ext3"
+      hardwareisa: unknown
+      uniqueid: a8c0fc01
+      sshdsakey: "AAAAB3NzaC1kc3MAAACBAMhupE5BGLUPJqxNSxZ2xeHSS/NUVZ81oO1gv24tNWyH8caadeqIoXEDonID2BYZjKXDp6owGinlpujyartwmAd3KEyRs8hiI8geDtTHuTOz+QjjQkBcIELBYxiBBosoR+noevk9ugZLw+LfMw8MpwdJ5RGTS8zvbKgryRZhCFB9AAAAFQDCOL7XnELclGDDLMZqLOQtK3WZJQAAAIAD29y0OydVHyMfVU9oXtaRGyaKbE7zDMaiFVCPi7nPgsMnDeGd5vWAYsEcp0LLz/T80IsJEOnjjV6GwtTXg6dPhR3+W4LEnGf801m9O0UanyipKUY4o8T204Et8gPFbKEyDbnzbwN9WfV9p96+rh4qjueaSEvsemQDciXPEjxMiQAAAIAF9RQ9Iitvd8BUd/FnBoQb//GPM9P3VfFz5zUMYYrsZ+pYN4NvGk8i+7j6FkkQ5Gz36++rZ9qw1bBbkrs9M92jhC5jixwxAOXWBPKZYjkqUN9HaNbGnyKRGjYermm4Jdu4JtCUAzazEnJildcFE1a8Hf7L5Mrvgl/ZARoVIC8nuA=="
+      sshfp_dsa: |-
+        SSHFP 2 1 474df92768533d29b6c1db848110e54e4d2c36d5
+        SSHFP 2 2 bb3b15548e4da0148279ae257ea557cea707b5c4b323d640047d8ac782e4f7d8
+      sshrsakey: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCYKCPAbewFp7lTilJiN7+m5cNsNSZnlDRkanhWLqmeAfCQMZSB3PF83XlqSg0FSxg1FuE13YlZ/rJrysK9EvAHwYxxaCrISRmgC/C1LUaXHHW8X4s6xMsUhJvFsxt3AOYuXpF0cqcB7r+yMZyBrsFBhaJl3tOyPJw2bZbKCZJpEyxooyATfuMtf2D6NLPiKAnZ4IZ99YC43FAGw9+kCOIIG0+PUi59QmFATs6cUoNy885lljBZAxO023WfjDLQ/MozOyVpDmj+EqCqPQyx/yfso4876ywsReeUx5GTGw6ZTk80qpTMQIbQh2CuMArm5uAV8a2aaO2PygG1uFkQsWlD"
+      sshfp_rsa: |-
+        SSHFP 1 1 6f2db67b55e3e329265604dd3332452c53c50c4e
+        SSHFP 1 2 f038a3e6744e79bb87967c729838c8385f3b0e1b2a33163772ee926c33e1ff77
+      uptime_hours: "0"
+      physicalprocessorcount: "1"
+      boardmanufacturer: "Shuttle Inc"
+      boardproductname: FG41
+      boardserialnumber: "To be filled by O.E.M."
+      bios_vendor: "American Megatrends Inc."
+      bios_version: "080015"
+      bios_release_date: "01/31/2011"
+      manufacturer: "Shuttle Inc"
+      productname: SG41
+      serialnumber: "0"
+      uuid: "00020003-0004-0005-0006-000700080009"
+      type: Desktop
+      processor0: "Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz"
+      processor1: "Intel(R) Core(TM)2 Duo CPU     E4600  @ 2.40GHz"
+      processorcount: "2"
+      kernelmajversion: "3.2"
+      domain: labohome.int
+      root_home: /root
+      puppet_vardir: /var/lib/puppet
+      is_pe: "false"
+      concat_basedir: /var/lib/puppet/concat
+      ip6tables_version: "1.4.14"
+      apt_update_last_success: "1425809428"
+      rabbitmq_erlang_cookie: TRKSPVSOXUENQFQLXLXP
+      iptables_version: "1.4.14"
+      clientcert: homenas.labohome.int
+      clientversion: "3.7.4"
+      clientnoop: "false"
+      "_timestamp": "2015-03-08 11:13:52 +0100"
+    expiration: 2015-03-08 11:43:52.051101 +01:00
+  time: 2015-03-08 11:13:52.243004 +01:00
+  environment: production
+  expiration: 2015-03-08 11:43:52.286791 +01:00

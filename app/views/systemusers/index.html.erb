@@ -1,0 +1,57 @@
+<h1><%= t('title.system') %></h1>
+
+<div class="form-search">
+  <div class="input-append pull-right">
+    <input type="text" id=search_field class="span2 search-query">
+    <span class="add-on"><%= content_tag(:i, '', class: 'icon-search') %></span>
+  </div>
+  <script type="text/javascript">
+    $('input#search_field').quicksearch("table tbody tr");
+  </script>
+</div>
+
+<br>
+
+<br>
+
+<%= link_to t('forms.buttons.newuser'), new_systemuser_path, class: "btn btn-primary" %>
+<%= link_to t('forms.buttons.import'), systemusers_import_path, class: "btn btn-info" %>
+<%= link_to t('forms.buttons.export'), systemusers_export_path, class: "btn btn-info" %>
+
+<br>
+
+<br>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Uid</th>
+      <th>Comment</th>
+      <th>Role</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @systemusers.each do |systemuser| %>
+      <tr <%= systemuser.ensure == "absent" ? "class=warning" : "" %>>
+        <td><%= systemuser.name %></td>
+        <td><%= systemuser.uid %></td>
+        <td><%= systemuser.comment %></td>
+        <% if systemuser.systemrole.nil? then %>
+          <td>Missing Role !</td>
+          <% flash.now[:error] = "Some roles are missing !" %>
+        <% else %>
+          <td><%= systemuser.systemrole.name %></td>
+        <% end %>
+        <td><%= link_to t('forms.buttons.show'), systemuser %></td>
+        <td><%= link_to t('forms.buttons.edit'), edit_systemuser_path(systemuser) %></td>
+        <td><%= link_to t('forms.buttons.destroy'), systemuser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

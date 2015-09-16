@@ -1,0 +1,182 @@
+--- !ruby/object:Puppet::Node
+  name: homebsd.labohome.int
+  classes: []
+  parameters: 
+    architecture: amd64
+    augeasversion: "1.2.0"
+    kernel: FreeBSD
+    domain: labohome.int
+    macaddress: "50:e5:49:9e:62:c0"
+    osfamily: FreeBSD
+    operatingsystem: FreeBSD
+    facterversion: "1.7.5"
+    fqdn: homebsd.labohome.int
+    hardwareisa: amd64
+    hardwaremodel: amd64
+    hostname: homebsd
+    id: root
+    interfaces: "re0,ral0,lo0"
+    ipaddress_re0: "192.168.1.251"
+    macaddress_re0: "50:e5:49:9e:62:c0"
+    netmask_re0: "255.255.255.0"
+    mtu_re0: "1500"
+    macaddress_ral0: "00:18:f8:29:46:5a"
+    mtu_ral0: "2290"
+    ipaddress_lo0: "127.0.0.1"
+    netmask_lo0: "255.0.0.0"
+    mtu_lo0: "16384"
+    ipaddress: "192.168.1.251"
+    kernelmajversion: "10.0"
+    kernelrelease: "10.0-RELEASE-p4"
+    kernelversion: "10.0"
+    boardmanufacturer: "Gigabyte Technology Co., Ltd."
+    boardproductname: D525TUD
+    bios_vendor: "Award Software International, Inc."
+    bios_version: F5
+    bios_release_date: "06/20/2011"
+    manufacturer: "Gigabyte Technology Co., Ltd."
+    productname: D525TUD
+    uuid: "00000000-0000-0000-0000-50E5499E62C0"
+    type: Desktop
+    memorysize: "3.97 GB"
+    memoryfree: "2.01 GB"
+    swapsize: "3.53 GB"
+    swapfree: "3.53 GB"
+    swapsize_mb: "3615.05"
+    swapfree_mb: "3615.05"
+    memorysize_mb: "4063.21"
+    memoryfree_mb: "2058.08"
+    memorytotal: "3.97 GB"
+    netmask: "255.255.255.0"
+    network_re0: "192.168.1.0"
+    network_lo0: "127.0.0.0"
+    operatingsystemrelease: "10.0-RELEASE-p4"
+    path: "/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/root/bin"
+    processorcount: "4"
+    processor: amd64
+    ps: "ps auxwww"
+    puppetversion: "3.4.3"
+    rubysitedir: /usr/local/lib/ruby/site_ruby/1.9
+    rubyversion: "1.9.3"
+    sshdsakey: "AAAAB3NzaC1kc3MAAACBAIk7vmWoy2+ky0ynv/jZSq7OcTJDHcn4yoJFR5e4st/+RzZITyrslPxd+l9BoUv2swtAEVguRvwxYnIf/YHKCb1U4si/8pgsEKNnTClGRnIAJX/qLXcFmwRbjCVnwJ55H1FsbfqOg0A+bWU6+2ryzm6DQbG83pclQc4+/3/IQUMtAAAAFQDwRd5cByNZ5GiLnJbltRZ1EX+A0QAAAIAZwgjYEhpuEwpuo0CwSVLJ4s1/1KmkqAEmvRrQgbmVnOQCNCD/yTqYp919FZa1+XXfT3QkpDtFO+aq9BmHSigDI66/MYWurxNDn3+VHFQZJkAzFOZ8nEK7UDnGXiPqjBfdv+nI3+eB/6WDaYSoXPY9x/nKsYj4ZowQPkFGz59CCAAAAIAQF8EXE5uYY1/iON3fFZrlV7p70rnDs0i3DjMD+3k0F/uXma4mLQMndeF9RFCLBNfcNE8p6QSU+q3MYVmscIw9D3VU5VltY/cu6T9pr0Le2bdYs61HxLeHvfrFojFwt6zBmvAyRLA+gq14+ZxEF+CAyQmHiRPHKnbHlNZH7kuxdg=="
+    sshfp_dsa: |-
+      SSHFP 2 1 099a7daec3a81f6b03cfa0f493eef217e5c2d657
+      SSHFP 2 2 be2d35646cacd2bc9ebf7741143f16496a0749e1fd2a8db6774f5a85c298cb35
+    sshrsakey: "AAAAB3NzaC1yc2EAAAADAQABAAABAQC/fmCDlWHh+dTmOCfG4DcbJuObKTb8F4GI/VAERGg7apxXJt4EWO2dvAoqNHDSOwNSWSk+pCHwhhA5eNHuAe8PhuqnNr/GAh0g32z0ZCbCEfm1qs/U8AdrfxfMYwVyE9uWhdhCTAtlLNcO9W9vHSp1mVZiHsZJJLKoLhhT6KwRA3DWRvKjFS+O4YJqFrYfzeuemZUJ3wm8woXCEfF/vx3aZBbBlbQkDsVV54yp8dneoZG/7V0OjJV6FWsLccxXk8jwoyJ8ojFWccGKjoY/NlFD1VoXY9u7T6jlW4FkDOqVq+btGxFL3Ltdl1MuB3rhUE4MDWiBiWW74CPpEJ9TRNXF"
+    sshfp_rsa: |-
+      SSHFP 1 1 40e49287541fd51d4bc6bc4f070f430757db0744
+      SSHFP 1 2 07df10bdab9379b5d9b6ae4c40dcc2a7f1aca0ff284f0be5b2f05e17828c8cdb
+    sshecdsakey: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFXKnLQQy0drbjhhEDjL1/mOMefFOzIpn6UXGwOs+Q9i82V1S3A+01rto1gXaOWOrslDnnV0uGBftJfmU8KLtZc="
+    sshfp_ecdsa: |-
+      SSHFP 3 1 f7a1b9601b0a0c60c55782ab0e8faf786df115d9
+      SSHFP 3 2 1f1231097a4f05b401578341dc528adfaa0f106c1b7efb1a079c673e3893c468
+    timezone: CEST
+    uptime: "2:40 hours"
+    uptime_days: "0"
+    uptime_hours: "2"
+    uptime_seconds: "9618"
+    virtual: physical
+    is_virtual: "false"
+    zfs_version: "5"
+    zpool_version: "28"
+    concat_basedir: /var/puppet/concat
+    is_pe: "false"
+    puppet_vardir: /var/puppet
+    root_home: /root
+    clientcert: homebsd.labohome.int
+    clientversion: "3.4.3"
+    clientnoop: "false"
+    "_timestamp": "2014-08-22 14:48:58 +0200"
+    environment: production
+  facts: !ruby/object:Puppet::Node::Facts
+    name: homebsd.labohome.int
+    values: 
+      architecture: amd64
+      augeasversion: "1.2.0"
+      kernel: FreeBSD
+      domain: labohome.int
+      macaddress: "50:e5:49:9e:62:c0"
+      osfamily: FreeBSD
+      operatingsystem: FreeBSD
+      facterversion: "1.7.5"
+      fqdn: homebsd.labohome.int
+      hardwareisa: amd64
+      hardwaremodel: amd64
+      hostname: homebsd
+      id: root
+      interfaces: "re0,ral0,lo0"
+      ipaddress_re0: "192.168.1.251"
+      macaddress_re0: "50:e5:49:9e:62:c0"
+      netmask_re0: "255.255.255.0"
+      mtu_re0: "1500"
+      macaddress_ral0: "00:18:f8:29:46:5a"
+      mtu_ral0: "2290"
+      ipaddress_lo0: "127.0.0.1"
+      netmask_lo0: "255.0.0.0"
+      mtu_lo0: "16384"
+      ipaddress: "192.168.1.251"
+      kernelmajversion: "10.0"
+      kernelrelease: "10.0-RELEASE-p4"
+      kernelversion: "10.0"
+      boardmanufacturer: "Gigabyte Technology Co., Ltd."
+      boardproductname: D525TUD
+      bios_vendor: "Award Software International, Inc."
+      bios_version: F5
+      bios_release_date: "06/20/2011"
+      manufacturer: "Gigabyte Technology Co., Ltd."
+      productname: D525TUD
+      uuid: "00000000-0000-0000-0000-50E5499E62C0"
+      type: Desktop
+      memorysize: "3.97 GB"
+      memoryfree: "2.01 GB"
+      swapsize: "3.53 GB"
+      swapfree: "3.53 GB"
+      swapsize_mb: "3615.05"
+      swapfree_mb: "3615.05"
+      memorysize_mb: "4063.21"
+      memoryfree_mb: "2058.08"
+      memorytotal: "3.97 GB"
+      netmask: "255.255.255.0"
+      network_re0: "192.168.1.0"
+      network_lo0: "127.0.0.0"
+      operatingsystemrelease: "10.0-RELEASE-p4"
+      path: "/sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/root/bin"
+      processorcount: "4"
+      processor: amd64
+      ps: "ps auxwww"
+      puppetversion: "3.4.3"
+      rubysitedir: /usr/local/lib/ruby/site_ruby/1.9
+      rubyversion: "1.9.3"
+      sshdsakey: "AAAAB3NzaC1kc3MAAACBAIk7vmWoy2+ky0ynv/jZSq7OcTJDHcn4yoJFR5e4st/+RzZITyrslPxd+l9BoUv2swtAEVguRvwxYnIf/YHKCb1U4si/8pgsEKNnTClGRnIAJX/qLXcFmwRbjCVnwJ55H1FsbfqOg0A+bWU6+2ryzm6DQbG83pclQc4+/3/IQUMtAAAAFQDwRd5cByNZ5GiLnJbltRZ1EX+A0QAAAIAZwgjYEhpuEwpuo0CwSVLJ4s1/1KmkqAEmvRrQgbmVnOQCNCD/yTqYp919FZa1+XXfT3QkpDtFO+aq9BmHSigDI66/MYWurxNDn3+VHFQZJkAzFOZ8nEK7UDnGXiPqjBfdv+nI3+eB/6WDaYSoXPY9x/nKsYj4ZowQPkFGz59CCAAAAIAQF8EXE5uYY1/iON3fFZrlV7p70rnDs0i3DjMD+3k0F/uXma4mLQMndeF9RFCLBNfcNE8p6QSU+q3MYVmscIw9D3VU5VltY/cu6T9pr0Le2bdYs61HxLeHvfrFojFwt6zBmvAyRLA+gq14+ZxEF+CAyQmHiRPHKnbHlNZH7kuxdg=="
+      sshfp_dsa: |-
+        SSHFP 2 1 099a7daec3a81f6b03cfa0f493eef217e5c2d657
+        SSHFP 2 2 be2d35646cacd2bc9ebf7741143f16496a0749e1fd2a8db6774f5a85c298cb35
+      sshrsakey: "AAAAB3NzaC1yc2EAAAADAQABAAABAQC/fmCDlWHh+dTmOCfG4DcbJuObKTb8F4GI/VAERGg7apxXJt4EWO2dvAoqNHDSOwNSWSk+pCHwhhA5eNHuAe8PhuqnNr/GAh0g32z0ZCbCEfm1qs/U8AdrfxfMYwVyE9uWhdhCTAtlLNcO9W9vHSp1mVZiHsZJJLKoLhhT6KwRA3DWRvKjFS+O4YJqFrYfzeuemZUJ3wm8woXCEfF/vx3aZBbBlbQkDsVV54yp8dneoZG/7V0OjJV6FWsLccxXk8jwoyJ8ojFWccGKjoY/NlFD1VoXY9u7T6jlW4FkDOqVq+btGxFL3Ltdl1MuB3rhUE4MDWiBiWW74CPpEJ9TRNXF"
+      sshfp_rsa: |-
+        SSHFP 1 1 40e49287541fd51d4bc6bc4f070f430757db0744
+        SSHFP 1 2 07df10bdab9379b5d9b6ae4c40dcc2a7f1aca0ff284f0be5b2f05e17828c8cdb
+      sshecdsakey: "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFXKnLQQy0drbjhhEDjL1/mOMefFOzIpn6UXGwOs+Q9i82V1S3A+01rto1gXaOWOrslDnnV0uGBftJfmU8KLtZc="
+      sshfp_ecdsa: |-
+        SSHFP 3 1 f7a1b9601b0a0c60c55782ab0e8faf786df115d9
+        SSHFP 3 2 1f1231097a4f05b401578341dc528adfaa0f106c1b7efb1a079c673e3893c468
+      timezone: CEST
+      uptime: "2:40 hours"
+      uptime_days: "0"
+      uptime_hours: "2"
+      uptime_seconds: "9618"
+      virtual: physical
+      is_virtual: "false"
+      zfs_version: "5"
+      zpool_version: "28"
+      concat_basedir: /var/puppet/concat
+      is_pe: "false"
+      puppet_vardir: /var/puppet
+      root_home: /root
+      clientcert: homebsd.labohome.int
+      clientversion: "3.4.3"
+      clientnoop: "false"
+      "_timestamp": "2014-08-22 14:48:58 +0200"
+    expiration: 2014-08-22 15:18:46.804892 +02:00
+  time: 2014-08-22 14:48:59.026675 +02:00
+  environment: production
+  expiration: 2014-08-22 15:18:59.029268 +02:00

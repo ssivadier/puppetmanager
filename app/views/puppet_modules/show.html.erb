@@ -1,18 +1,37 @@
-<p id="notice"><%= notice %></p>
-
+<%= form_for @puppet_module, url: diff_puppet_modules_path(@puppet_module), 
+    method: :post, html: {multipart: :true}, remote: true,  
+    :authenticity_token => true do |f| %>
 <p>
-  <strong>Name:</strong>
-  <%= @puppet_module.name %>
+  <strong>Module name:</strong>
+  <%= @puppet_module.name.split('/')[1] %>
 </p>
 
 <p>
-  <strong>Version:</strong>
-  <%= @puppet_module.version %>
+  <strong>Repository url:</strong>
+  <%= @puppet_module.url %>
 </p>
 
 <p>
-  <strong>Derniere MAJ:</strong>
-  <%= @puppet_module.updated_at.localtime %>
+  <strong>Environment:</strong>
+  <%= @puppet_module.environment %>
 </p>
 
-<%= link_to 'Back', puppet_modules_path %>
+<p>
+  <strong>Available versions:</strong>
+  
+  <table>
+    <% @module_versions.each do |versions| %>
+    <tr>
+         <td><label class="checkbox">
+         <input type=checkbox name='ids[]' value=<%= versions.id %>><%= versions.version %>
+         </label></td>
+    </tr>
+    <% end %>
+  </table>
+</p>
+<%= submit_tag "Diff", {:type => 'submit', :class =>"btn btn-primary", :id =>"btn"} %>
+<%= link_to 'Redmine', "#{PuppetManager::Application::REDMINE_LINK}projects/puppet/repository/puppet-#{@module_name.split('/')[1]}", class: "btn btn-info" %>
+<%= link_to 'Back', puppet_modules_path, class: "btn btn-secondary" %>
+<% end %>
+
+<div id="diff" class="hidden"></div>

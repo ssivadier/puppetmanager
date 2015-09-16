@@ -1,0 +1,29 @@
+<h1><%= t('title.systemroles') %></h1>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gid</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @systemroles.each do |systemrole| %>
+      <tr>
+        <td><%= systemrole.name %></td>
+        <td><%= systemrole.gid %></td>
+        <td><%= link_to t('forms.buttons.show'), systemrole %></td>
+        <td><%= link_to t('forms.buttons.edit'), edit_systemrole_path(systemrole) %></td>
+        <td><%= link_to t('forms.buttons.destroy'), systemrole, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('forms.buttons.newrole'), new_systemrole_path, class: "btn btn-primary" %>

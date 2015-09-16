@@ -1,0 +1,17 @@
+<%= simple_form_for(@systemuser) do |f| %>
+
+  <%= f.error_notification %>
+
+  <%= f.input :name, label: 'Username' %>
+  <%= f.input :uid, label: 'Uid' %>
+  <%= f.input :ensure, label: 'Ensure', priority: [ @systemuser.ensure ], collection: [ "present", "absent"] %>
+  <%= f.input :comment, label: 'Comment' %>
+  <%= f.input :manage_home, label: 'Is the Home managed ?' %>
+  <%= f.input :password, label: 'Password' %>
+  <%= f.input :sshkey, label: 'Sshkey' %>
+  <%= f.input :sshkeytype, label: 'Sshkeytype' %>
+  <%= f.input :keyfile, label: 'Keyfile' %>
+  <%= f.association :shell %>
+  <%= f.association :systemrole %>
+  <%= f.button :submit, class: "btn-primary" %>
+<% end %>

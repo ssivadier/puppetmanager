@@ -8,20 +8,33 @@
 // compiled file.
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
-// about supported directives.
-//
+// about supported directives.//
 //= require jquery
 //= require jquery_ujs
+//= require turbolinks
 //= require quicksearch
+//= require nprogress
+//= require nprogress-turbolinks
 //
 //Loads all Bootstrap javascripts
 //= require bootstrap
 //
+$(document).on('page:fetch',   function() { NProgress.start(); });
+$(document).on('page:change',  function() { NProgress.done(); });
+$(document).on('page:restore', function() { NProgress.remove(); });
 
-
-$(function(){	
+$(function(){
 	// ---------------------------------
-	// champ de recherche
+	// drop the menu with mouse over, not click
 	// ---------------------------------
-	$('input#search_field').quicksearch("table tbody tr");
+  $('.navbar .dropdown').hover(function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+  });
+  
+	// ---------------------------------
+	// Search field
+	// ---------------------------------
+  $('input#search_field').quicksearch("table tbody tr");
 });

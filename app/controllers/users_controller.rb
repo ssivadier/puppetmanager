@@ -24,7 +24,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to @user, notice: 'User was successfully created.'
+      redirect_to @user, notice: "User #{@user.uid} was successfully created."
+      MyLog.info "[#{session[:user_uid]}][#{self.class.name}] has created a new user '#{@user.uid}'."
     else
       render action: 'new'
     end
@@ -33,7 +34,8 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   def update
     if @user.update(user_params)
-      redirect_to @user, notice: 'User was successfully updated.'
+      redirect_to @user, notice: "User #{@user.uid} was successfully updated."
+      MyLog.info "[#{session[:user_uid]}][#{self.class.name}] has updated a new user '#{@user.uid}'."
     else
       render action: 'edit'
     end
@@ -41,8 +43,10 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   def destroy
+    removed_user = @user.uid
     @user.destroy
-    redirect_to users_url, notice: 'User was successfully destroyed.'
+    redirect_to users_url, notice: "User #{removed_user} was successfully destroyed."
+      MyLog.info "[#{session[:user_uid]}][#{self.class.name}] has removed a new user '#{removed_user}'."
   end
 
   private

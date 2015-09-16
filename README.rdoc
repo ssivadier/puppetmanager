@@ -1,0 +1,8 @@
+== README
+
+Puppet-Manager is designed to certify or revoke puppet nodes and help you parse a user.yml file to declare system users.
+
+Only 2 languages are available: French and English. French is the default one, but you can change the default locale in "config/
+application.rb".
+
+This application is authenticated through CAS. You can change the CAS url in "app/controllers/sessions_controller.rb"
