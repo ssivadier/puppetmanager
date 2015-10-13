@@ -145,3 +145,22 @@ NameError (undefined local variable or method `node' for #<NodesController:0x007
 2015-10-13 17:15:07 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (11.2ms)
 2015-10-13 17:15:07 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
 2015-10-13 17:15:07 INFO -- Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.7ms)
+2015-10-13 18:38:11 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-10-13 18:38:11 +0200
+2015-10-13 18:38:11 INFO -- Processing by SystemusersController#index as HTML
+2015-10-13 18:38:11 INFO --   Rendered systemusers/index.html.erb within layouts/application (300.8ms)
+2015-10-13 18:38:11 INFO --   Rendered layouts/_navbar.html.erb (1.2ms)
+2015-10-13 18:38:11 INFO -- Completed 200 OK in 338ms (Views: 320.2ms | ActiveRecord: 1.1ms)
+2015-10-13 18:38:14 INFO -- Started GET "/systemusers/import" for 127.0.0.1 at 2015-10-13 18:38:14 +0200
+2015-10-13 18:38:14 INFO -- Processing by SystemusersController#import as HTML
+2015-10-13 18:38:15 INFO -- Redirected to http://127.0.0.1:3000/systemusers
+2015-10-13 18:38:15 INFO -- Completed 302 Found in 1544ms (ActiveRecord: 1377.5ms)
+2015-10-13 18:38:15 INFO -- Started GET "/systemusers" for 127.0.0.1 at 2015-10-13 18:38:15 +0200
+2015-10-13 18:38:15 INFO -- Processing by SystemusersController#index as HTML
+2015-10-13 18:38:15 INFO --   Rendered systemusers/index.html.erb within layouts/application (4.2ms)
+2015-10-13 18:38:15 INFO --   Rendered layouts/_navbar.html.erb (1.1ms)
+2015-10-13 18:38:15 INFO -- Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+2015-10-13 18:38:20 INFO -- Started GET "/systemroles" for 127.0.0.1 at 2015-10-13 18:38:20 +0200
+2015-10-13 18:38:20 INFO -- Processing by SystemrolesController#index as HTML
+2015-10-13 18:38:20 INFO --   Rendered systemroles/index.html.erb within layouts/application (2.4ms)
+2015-10-13 18:38:20 INFO --   Rendered layouts/_navbar.html.erb (1.0ms)
+2015-10-13 18:38:20 INFO -- Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.3ms)

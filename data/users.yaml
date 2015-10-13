@@ -1,9 +1,9 @@
 ---
-users::admincs:
+users::admin:
   myself:
-    uid: '20002'
+    uid: '20000'
     gid: admin
-    comment: My special account
+    comment: 'My special account'
     managehome: 'false'
     groups:
       - adm
@@ -16,3 +16,5 @@ users::admincs:
 users::groups:
   admin:
     gid: '30000'
+  admindns:
+    gid: '31000'
