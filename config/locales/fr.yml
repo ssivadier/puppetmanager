@@ -225,16 +225,18 @@ fr:
       lang: "Langue"
       fr: "Francais"
       en: "Anglais"
-    revoke: 'Revoquer un noeud'
+    revoke: 'Machines'
     systemusers:
-      users: "Utilisateurs"
-      admins: "Administrateurs"
+      users: "Comptes systeme"
+      admins: "Utilisateurs"
       roles: "Roles"
   title:
     user: "Utilisateurs applicatif"
     system: "Utilisateurs systeme"
     systemroles: "Roles systeme"
     welcome: "Bienvenue sur le Puppet manager"
-    revoke: "Revoquer les noeuds"
+    revoke: "Les machines puppetisees"
+    user_description: "Description de l'utilisateur systeme"
+    user_edit: "Modifier l'utilisateur systeme"
   content:
     welcome_html: "Cette application a ete realisee pour aider les utilisateurs de puppet a gerer le service puppet master.<br /><br /><i>Note: Si vous n'avez pas acces a toutes les fonctionnalites, demandez a un administrateur.</i>"

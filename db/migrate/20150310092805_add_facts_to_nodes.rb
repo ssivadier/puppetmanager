@@ -8,7 +8,10 @@ class AddFactsToNodes < ActiveRecord::Migration
     add_column :nodes, :osversion, :string
     add_column :nodes, :kernel, :string
     add_column :nodes, :role, :string
+    add_column :nodes, :profile, :string
     add_column :nodes, :environment, :string
     add_column :nodes, :description, :string
+    add_column :nodes, :memorysize, :string
+    add_column :nodes, :processorcount, :string
   end
 end

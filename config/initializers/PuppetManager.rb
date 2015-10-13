@@ -1,7 +1,7 @@
 module PuppetManager
   class Application
     # PUPPET MANAGER APP
-    VERSION			= "2.7.4"
+    VERSION			= "2.8.3"
     TITLE			= "PUPPET MANAGER"
       
     # EXTERNAL LINKS

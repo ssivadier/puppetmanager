@@ -17,5 +17,5 @@ class Node < ActiveRecord::Base
     return output
   end
   # -------------------
-  
+
 end

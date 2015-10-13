@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<% if @node.osname %>
 <p>
   <br />
-  <%= if @node.name.include? "win"
+  <%= if @node.osname.include? "windows"
     content_tag(:i, '', class: 'icon-windows icon-4x pull-right')
 	else
 		content_tag(:i, '', class: 'icon-linux icon-4x pull-right')
@@ -10,24 +11,34 @@
   <strong>Name:</strong>
   <%= @node.name %>
   <br />
-  <strong>Certified:</strong>
-  <%= @node.certified %>
-  <% if @node.certified %>
-	  <br />
-	  <strong>Certified on:</strong>
-	  <%= @node.updated_at.localtime %>
-  <% end %>
-  <br />
   <strong>Architecture:</strong>
   <%= @node.osarch %>
   <br />
-  <strong>Distribution:</strong>
-  <%= @node.osname %>
+  <strong>CPU:</strong>
+  <%= @node.processorcount %>
   <br />
-  <strong>Version:</strong>
-  <%= @node.osversion %>
+  <strong>Memory:</strong>
+  <%= @node.memorysize %>
+  <br />
+  <strong>Distribution:</strong>
+  <%= @node.osname %> <%= @node.oscodename %> (<%= @node.osversion %>)
+  <br />
+  <strong>Kernel:</strong>
+  <%= @node.kernel %>
   <br />
   <strong>Virtual:</strong>
   <%= @node.virtual %>
+  <br />
+  <strong>Roles:</strong>
+  <%= @node.role %>
+  <br />
+  <strong>Profiles:</strong>
+  <%= @node.profile %>
+  <br />
+  <strong>Puppet environment:</strong>
+  <%= @node.environment %>
 </p>
+<% else %>
+<p> No information available </p>
+<% end %>
 <%= link_to 'Back', :back %>

@@ -1,5 +1,7 @@
 require 'builder'
+if Rails.env.production?
 require 'puppet'
+end
 
 class NodesController < ApplicationController
   before_action :set_node, only: [:show, :edit, :update, :destroy]
@@ -31,22 +33,17 @@ class NodesController < ApplicationController
   
   def index_certified
 #	@nodes = Node.where('certified' => true)   # Get certified nodes only
-    output_command = Node.puppetca_command('--all')
-    if output_command.blank?
-      flash.now[:notice] = "No certified node to revoke"
-    else
-      @nodes = output_command.split(/\n/).map do | line |
-        name = line.split(/\s+/)[1].gsub(/"/,'')    # Get the fqdn
-        Node.where('name'=>name).first_or_create    # Checks if the node already exists, or creates it.
-      end
+    # @nodes = Node.all
+    @nodes = Rails.cache.fetch("node_#{Node.maximum('updated_at')}") do
+      Node.all
     end
+
+    @nodecount = @nodes.count
 
     respond_to do |format|
       format.xml { render :xml => node_xml }
       format.html
     end
-
-
   end
     
     

@@ -3,7 +3,9 @@ class SystemusersController < ApplicationController
 
   # GET /systemusers
   def index
-    @systemusers = Systemuser.all.order(:systemrole_id, :uid)
+    @systemusers = Rails.cache.fetch("systemuser_#{Systemuser.maximum('updated_at')}") do
+      Systemuser.all.order(:systemrole_id, :uid)
+    end
   end
 
   # GET /systemusers/1

@@ -1,4 +1,4 @@
-<h1><%= t('title.revoke') %></h1>
+<h1><%= t('title.revoke') %> (<%= @nodecount %> nodes)</h1>
 
 
 <%= form_tag(revoke_nodes_path, :class => "form-search") do %>
@@ -12,10 +12,14 @@
 	$('input#search_field').quicksearch("table tbody tr");
 </script>
 
+<br><br>
+
 <table class="table table-striped table-hover">
   <thead>
     <tr>
       <th>Name</th>
+      <th>Distribution</th>
+      <th>Codename</th>
       <th></th>
       <th></th>
     </tr>
@@ -28,6 +32,8 @@
 			<td><label class="checkbox">
 				<input type=checkbox name='ids[]' value=<%= node.id %>><%= node.name %>
 				</label></td>
+			<td><%= node.osname %></td>
+			<td><%= node.oscodename %></td>
 			<td><%= link_to 'Show', node %></td>
 		  </tr>
       <% end %>

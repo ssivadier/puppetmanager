@@ -7,7 +7,7 @@
   <%= f.input :ensure, label: 'Ensure', priority: [ @systemuser.ensure ], collection: [ "present", "absent"] %>
   <%= f.input :comment, label: 'Comment' %>
   <%= f.input :manage_home, label: 'Is the Home managed ?' %>
-  <%= f.input :password, label: 'Password' %>
+  <div class="form-group password optional"><label class="password optional control-label" for="systemuser_password">Password</label><input type="text" class="string optional form-control" id="systemuser_password" name="systemuser[password]" value="<%= @systemuser.password %>" /></div>
   <%= f.input :sshkey, label: 'Sshkey' %>
   <%= f.input :sshkeytype, label: 'Sshkeytype' %>
   <%= f.input :keyfile, label: 'Keyfile' %>

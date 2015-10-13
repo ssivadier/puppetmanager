@@ -44,6 +44,7 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     daemons (1.1.9)
+    dalli (2.7.4)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
@@ -382,6 +383,7 @@ DEPENDENCIES
   activerecord-session_store
   bootstrap-sass (~> 2.3.2.0)
   coffee-rails (~> 4.0.0)
+  dalli
   figaro
   font-awesome-rails (~> 3.2.1.2)
   jquery-rails

@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20150828093535) do
 
   create_table "nodes", force: true do |t|
-    t.string   "name",                        null: false
+    t.string   "name",                           null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "certified",   default: false, null: false
+    t.boolean  "certified",      default: false, null: false
     t.string   "virtual"
     t.string   "osarch"
     t.string   "osfamily"
@@ -26,8 +26,11 @@ ActiveRecord::Schema.define(version: 20150828093535) do
     t.string   "osversion"
     t.string   "kernel"
     t.string   "role"
+    t.string   "profile"
     t.string   "environment"
     t.string   "description"
+    t.string   "memorysize"
+    t.string   "processorcount"
   end
 
   create_table "optgroups", force: true do |t|

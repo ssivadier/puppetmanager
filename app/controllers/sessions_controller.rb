@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    cas_logout_url = "https://CAS URL"
+    cas_logout_url = "https://authentification-cerbere.application.i2/cas/logout?gateway=1&service=#{root_url}"
     #cas_logout_url = OmniAuth.config.full_host
     #                     .merge("/logout?gateway=1&service=#{welcome_url}")
     #                     .to_s

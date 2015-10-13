@@ -29,6 +29,7 @@
       <th>Uid</th>
       <th>Comment</th>
       <th>Role</th>
+      <th>Etat</th>
       <th></th>
       <th></th>
       <th></th>
@@ -47,6 +48,7 @@
         <% else %>
           <td><%= systemuser.systemrole.name %></td>
         <% end %>
+        <td><%= systemuser.ensure %></td>
         <td><%= link_to t('forms.buttons.show'), systemuser %></td>
         <td><%= link_to t('forms.buttons.edit'), edit_systemuser_path(systemuser) %></td>
         <td><%= link_to t('forms.buttons.destroy'), systemuser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
