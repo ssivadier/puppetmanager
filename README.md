@@ -2,10 +2,7 @@
 
 Puppet-Manager is designed to certify or revoke puppet nodes and help you parse a user.yml file to declare system users.
 
-Only 2 languages are available: French and English. French is the default one, but you can change the default locale in "config/
-application.rb".
-
-This application is authenticated through CAS. You can change the CAS url in "app/controllers/sessions_controller.rb"
+This application needs to be installed on the puppetmaster.
 
 ## Installation
 
@@ -39,17 +36,19 @@ www-data  ALL=(puppet) NOPASSWD: /usr/bin/git reset --hard origin/master
 www-data  ALL=(puppet) NOPASSWD: /usr/bin/git pull
 ```
 
+Only 2 languages are available: French and English. French is the default one, but you can change the default locale in "config/
+application.rb".
+
+This application is authenticated through CAS. You can change the CAS url in "app/controllers/sessions_controller.rb".
+
+
 ### Other Configuration
 
 Prepare thin conf
 ```sh
-if [ ! -f /etc/thin1.9.1/app.yml ]; then
-  echo "-----> Installation de thin"
-  thin install	
-
-  echo "-----> Configuration de thin"
-  insserv -d thin
-  cat > /etc/thin1.9.1/app.yml << EOL
+thin install	
+insserv -d thin
+cat > /etc/thin1.9.1/app.yml << EOL
 --- 
 user: www-data
 group: www-data
@@ -68,16 +67,12 @@ chdir: /var/www/puppetmanager/puppet-manager/
 tag: puppetmanager
 EOL
 
-fi
-
 /etc/init.d/thin start -C /etc/thin1.9.1/app.yml
 ```
 
 You can also use nginx to redirect to port 80 and deliver static objects:
 ```sh
-if [ ! -f /etc/nginx/sites-enabled/puppetmanager ]; then
-  echo "-----> Configuration de nginx"
-  cat > /etc/nginx/sites-enabled/puppetmanager << EOF
+cat > /etc/nginx/sites-enabled/puppetmanager << EOF
 server {
   listen   80;
   listen   [::]:80 default ipv6only=on;
@@ -105,19 +100,17 @@ server {
 }
 EOF
 
-fi
 
 service nginx restart
 ```
 
 You can also add cron :
 ```sh
-if [ ! -f /etc/cron.d/puppetmaster-rake ]; then
-  echo "-----> Ajout du cron pour la synchronisation des confs des noeuds"
-  cat > /etc/cron.d/puppetmaster-rake << EOF
-# tache rake pour peupler le puppetmanager
+cat > /etc/cron.d/puppetmaster-rake << EOF
+# Get the puppet facts and fill in the node database
 0 21 * * * root cd /var/www/puppetmanager/puppet-manager/lib/tasks && RAILS_ENV=production /usr/local/bin/rake puppetfacts:getfacts
+
+# Pull the node list from puppet every 2 min.
 /2 * * * * root cd /var/www/puppetmanager/puppet-manager/lib/tasks && RAILS_ENV=production /usr/local/bin/rake puppetnodes:import
 EOF
-fi
 ```

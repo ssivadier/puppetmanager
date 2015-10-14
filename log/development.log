@@ -164,3 +164,74 @@ NameError (undefined local variable or method `node' for #<NodesController:0x007
 2015-10-13 18:38:20 INFO --   Rendered systemroles/index.html.erb within layouts/application (2.4ms)
 2015-10-13 18:38:20 INFO --   Rendered layouts/_navbar.html.erb (1.0ms)
 2015-10-13 18:38:20 INFO -- Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+2015-10-13 18:39:16 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-13 18:39:16 +0200
+2015-10-13 18:39:16 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-13 18:39:16 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__682983327679614119_70215174591740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-13 18:39:16 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (379.5ms)
+2015-10-13 18:39:16 INFO --   Rendered layouts/_navbar.html.erb (1.2ms)
+2015-10-13 18:39:16 INFO -- Completed 200 OK in 414ms (Views: 389.7ms | ActiveRecord: 1.5ms)
+2015-10-13 18:39:20 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-13 18:39:20 +0200
+2015-10-13 18:39:20 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-13 18:39:20 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__682983327679614119_70215174591740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-13 18:39:20 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (8.7ms)
+2015-10-13 18:39:20 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-10-13 18:39:20 INFO -- Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.6ms)
+2015-10-13 18:40:21 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-13 18:40:21 +0200
+2015-10-13 18:40:21 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-13 18:40:21 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__2880841185318724007_69870712603740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-13 18:40:21 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (326.1ms)
+2015-10-13 18:40:21 INFO --   Rendered layouts/_navbar.html.erb (1.3ms)
+2015-10-13 18:40:21 INFO -- Completed 200 OK in 349ms (Views: 333.1ms | ActiveRecord: 1.4ms)
+2015-10-13 18:40:23 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-13 18:40:23 +0200
+2015-10-13 18:40:23 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-13 18:40:23 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__2880841185318724007_69870712603740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-13 18:40:23 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (13.8ms)
+2015-10-13 18:40:23 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-10-13 18:40:23 INFO -- Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.7ms)
+2015-10-13 18:40:23 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-13 18:40:23 +0200
+2015-10-13 18:40:23 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-13 18:40:23 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__2880841185318724007_69870712603740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-13 18:40:23 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (12.8ms)
+2015-10-13 18:40:23 INFO --   Rendered layouts/_navbar.html.erb (34.3ms)
+2015-10-13 18:40:23 INFO -- Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.8ms)
+2015-10-13 18:40:23 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-13 18:40:23 +0200
+2015-10-13 18:40:23 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-13 18:40:23 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__2880841185318724007_69870712603740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-13 18:40:23 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (9.2ms)
+2015-10-13 18:40:23 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-10-13 18:40:23 INFO -- Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.7ms)
+2015-10-13 18:40:27 INFO -- Started GET "/nodes/64" for 127.0.0.1 at 2015-10-13 18:40:27 +0200
+2015-10-13 18:40:27 INFO -- Processing by NodesController#show as HTML
+2015-10-13 18:40:27 INFO --   Parameters: {"id"=>"64"}
+2015-10-13 18:40:27 INFO --   Rendered nodes/show.html.erb within layouts/application (0.8ms)
+2015-10-13 18:40:27 INFO --   Rendered layouts/_navbar.html.erb (1.5ms)
+2015-10-13 18:40:27 INFO -- Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+2015-10-13 18:40:29 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-13 18:40:29 +0200
+2015-10-13 18:40:29 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-13 18:40:29 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__2880841185318724007_69870712603740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-13 18:40:29 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (17.7ms)
+2015-10-13 18:40:29 INFO --   Rendered layouts/_navbar.html.erb (1.0ms)
+2015-10-13 18:40:29 INFO -- Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.8ms)
+2015-10-13 18:40:32 INFO -- Started GET "/nodes/65" for 127.0.0.1 at 2015-10-13 18:40:32 +0200
+2015-10-13 18:40:32 INFO -- Processing by NodesController#show as HTML
+2015-10-13 18:40:32 INFO --   Parameters: {"id"=>"65"}
+2015-10-13 18:40:32 INFO --   Rendered nodes/show.html.erb within layouts/application (0.3ms)
+2015-10-13 18:40:32 INFO --   Rendered layouts/_navbar.html.erb (0.7ms)
+2015-10-13 18:40:32 INFO -- Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+2015-10-13 18:40:34 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-13 18:40:34 +0200
+2015-10-13 18:40:34 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-13 18:40:34 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__2880841185318724007_69870712603740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-13 18:40:34 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (9.9ms)
+2015-10-13 18:40:34 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-10-13 18:40:34 INFO -- Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+2015-10-13 18:40:54 INFO -- Started POST "/nodes/revoke" for 127.0.0.1 at 2015-10-13 18:40:54 +0200
+2015-10-13 18:40:54 INFO -- Processing by NodesController#revoke as HTML
+2015-10-13 18:40:54 INFO --   Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tw0ljmhHYpT54QO/jp5Ab5kC0KVSnjBeGJWNc1thOKk=", "ids"=>["2"], "commit"=>"Revoke"}
+2015-10-14 12:34:22 INFO -- Redirected to http://127.0.0.1:3000/nodes/index_certified
+2015-10-14 12:34:22 INFO -- Completed 302 Found in 64408117ms (ActiveRecord: 0.6ms)
+2015-10-14 12:34:22 INFO -- Started GET "/nodes/index_certified" for 127.0.0.1 at 2015-10-14 12:34:22 +0200
+2015-10-14 12:34:22 INFO -- Processing by NodesController#index_certified as HTML
+2015-10-14 12:34:22 WARN -- DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead'. (called from block in _app_views_nodes_index_certified_html_erb__2880841185318724007_69870712603740 at /home/ssivadier/git/puppetmanager/app/views/nodes/index_certified.html.erb:44)
+2015-10-14 12:34:22 INFO --   Rendered nodes/index_certified.html.erb within layouts/application (50.0ms)
+2015-10-14 12:34:22 INFO --   Rendered layouts/_navbar.html.erb (0.6ms)
+2015-10-14 12:34:22 INFO -- Completed 200 OK in 57ms (Views: 52.4ms | ActiveRecord: 1.0ms)

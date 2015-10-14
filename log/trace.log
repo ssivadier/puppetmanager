@@ -8,3 +8,4 @@
 2015-08-28 11:44:40 INFO -- [][SystemusersController] has exported user.yaml file
 2015-08-28 14:30:23 INFO -- [][SystemrolesController] has successfully created system role intervenant
 2015-10-13 18:38:15 INFO -- [][SystemusersController] has imported user.yaml file
+2015-10-14 12:34:22 INFO -- [][NodesController] has revoked those nodes '["h-alpha-01.sen.centre-serveur.i2"]'
